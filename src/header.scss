@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 120px;
+
+    .icon {
+        height: 30px;
+    }
+
+    .header-list {
+        list-style-type: none;
+        margin: 0;
+        overflow: hidden;
+
+        li {
+            display: inline;
+            padding: 20px;
+        }
+    }
+
+}
+
