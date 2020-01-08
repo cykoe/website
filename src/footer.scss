@@ -1,14 +1,17 @@
 .footer {
-  background-color: blueviolet;
+  background-color: darkblue;
   display: flex;
   justify-content: space-around;
 }
 
 .footer-follow {
-  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   .footer-follow-title {
     color: white;
+    font-size: 18px;
     padding-bottom: 20px;
   }
 
@@ -20,26 +23,28 @@
 
     li {
       display: inline;
-      padding: 20px;
+      padding: 10px;
     }
   }
 
   .footer-follow-logos {
-    width: 40px;
+    width: 36px;
   }
 }
 
 .footer-current {
-  color: white;
-  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   .footer-current-title {
+    color: white;
     font-size: 30px;
     padding-bottom: 20px;
   }
 
   .footer-current-subtitle {
-
+    color: white;
   }
 }
 
@@ -48,8 +53,10 @@
 
   .footer-projects-arrows {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding: 50px 0;
 
     .footer-projects-arrow {
       color: white;
@@ -73,12 +80,14 @@
     }
 
     li {
-      width: 50px;
+      padding: 0 20px;
+
+      .footer-projects-item-title {
+        color: white;
+        padding-bottom: 10px;
+      }
     }
 
-    div {
-      //display: inherit;
-    }
   }
 
 }

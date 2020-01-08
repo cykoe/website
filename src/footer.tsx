@@ -15,34 +15,39 @@ const Footer: React.FC = () => {
   return (
       <div className='footer'>
         <div className='footer-follow'>
-          <div className='footer-follow-title'>
-            Follow Me
-          </div>
-          <div className='footer-follow-list'>
-            <ul>
-              <li><img src={facebook} className='footer-follow-logos'/></li>
-              <li><img src={youtube} className='footer-follow-logos'/></li>
-              <li><img src={twitter} className='footer-follow-logos'/></li>
-              <li><img src={sina} className='footer-follow-logos'/></li>
-            </ul>
+          <div className='footer-follow-wrapper'>
+            <div className='footer-follow-title'>
+              Follow Me
+            </div>
+            <div className='footer-follow-list'>
+              <ul>
+                <li><img src={facebook} className='footer-follow-logos'/></li>
+                <li><img src={youtube} className='footer-follow-logos'/></li>
+                <li><img src={twitter} className='footer-follow-logos'/></li>
+                <li><img src={sina} className='footer-follow-logos'/></li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className='footer-current'>
-          <div className='footer-current-title'>
-            Currently Working On:
-          </div>
-          <div className='footer-current-subtitle'>
-            Erhabo
+          <div className='footer-current-wrapper'>
+            <div className='footer-current-title'>
+              Currently Working On:
+            </div>
+            <div className='footer-current-subtitle'>
+              Erhabo
+            </div>
           </div>
         </div>
         <div className='footer-projects'>
           <span className='footer-projects-arrows'>
-            <ArrowBackIcon className='footer-projects-arrow footer-projects-arrow-active'/>
+            <ArrowBackIcon
+                className='footer-projects-arrow footer-projects-arrow-active'/>
             <ArrowForwardIcon className='footer-projects-arrow'/>
           </span>
           <ul className='footer-projects-list'>
             <li>
-              <div>
+              <div className='footer-projects-item-title'>
                 1. Zblit
               </div>
               <div>
@@ -50,7 +55,7 @@ const Footer: React.FC = () => {
               </div>
             </li>
             <li>
-              <div>
+              <div className='footer-projects-item-title'>
                 2. Gohabit
               </div>
               <div>
