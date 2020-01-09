@@ -6,7 +6,7 @@ import SearchIcon from '@material-ui/icons/Search';
 const Header: React.FC = () => {
   return (
       <div className="header">
-          <span>
+          <span className='header-icon'>
             <img src={icon} className='icon'/>
             <span>harlie</span>
           </span>

@@ -22,7 +22,8 @@ const Main: React.FC = () => {
             Illinois
           </div>
           <div className="middle-intro-arrows">
-            <ArrowBackIcon className="middle-intro-arrow middle-intro-arrow-active"/>
+            <ArrowBackIcon
+                className="middle-intro-arrow middle-intro-arrow-active"/>
             <ArrowForwardIcon className="middle-intro-arrow"/>
           </div>
         </div>

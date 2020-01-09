@@ -1,21 +1,34 @@
 .header {
     display: flex;
-    justify-content: space-between;
-    margin: 20px 120px;
+    //justify-content: space-between;
+    margin: 0 150px;
+    margin-right: 0;
+
+    padding-top: 80px;
+    max-width: 100%;
 
     .icon {
         height: 30px;
+    }
+
+    .header-icon {
+        flex: 50% 1 1;
     }
 
     .header-list {
         list-style-type: none;
         margin: 0;
         overflow: hidden;
-
+        flex: 70% 1 1;
+        padding-inline-start: 0;
         li {
             display: inline;
             padding: 20px;
+            a {
+                text-decoration: none;
+            }
         }
+
     }
 
 }
