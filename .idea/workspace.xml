@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18d23ae3-e136-4775-830f-f39dbe4101a4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Apps.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Apps.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +92,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578383421329</updated>
-      <workItem from="1578383423208" duration="21958000" />
+      <workItem from="1578383423208" duration="23956000" />
+      <workItem from="1578576965478" duration="915000" />
+      <workItem from="1578584395153" duration="6080000" />
     </task>
     <servers />
   </component>
@@ -99,6 +102,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="431" y="214" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578577093633">
+      <screen x="0" y="0" width="1500" height="970" />
+    </state>
+    <state x="431" y="214" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1500.970@0.0.1500.970" timestamp="1578577093633" />
     <state x="664" y="280" key="EditFileWatcherDialog" timestamp="1578445369990">
       <screen x="0" y="0" width="1500" height="970" />
     </state>
@@ -107,9 +114,9 @@
       <screen x="0" y="0" width="1500" height="970" />
     </state>
     <state x="768" y="218" width="700" height="530" key="recent.locations.popup/0.0.1500.970@0.0.1500.970" timestamp="1578388648646" />
-    <state x="490" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1578560939154">
+    <state x="501" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1578594800218">
       <screen x="0" y="0" width="1500" height="970" />
     </state>
-    <state x="490" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1500.970@0.0.1500.970" timestamp="1578560939154" />
+    <state x="501" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1500.970@0.0.1500.970" timestamp="1578594800217" />
   </component>
 </project>

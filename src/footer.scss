@@ -1,11 +1,12 @@
 .footer {
   background-color: darkblue;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 30vh;
+  padding: 0 150px;
 }
 
 .footer-follow {
