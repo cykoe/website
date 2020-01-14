@@ -57,138 +57,146 @@ const App: React.FC = () => {
           </div>
         </div>
 
-        <div className='row project-list'>
-          <div className='col-1'></div>
-          <div className='project-list-item col-10'>
-            <div className='col-5 project-list-item-name'>
-              <div className='item-name-section'>
-                <div><img src={horizontal_line}/></div>
-                <div>01</div>
-                <div className='title'>
-                  Zblit
-                  <div className='sub-title'>next-generataion receipt splitting
-                    platform
+        <div className='project-list-section'>
+
+          <div className='row project-list'>
+            <div className='col-1'></div>
+            <div className='project-list-item col-10'>
+              <div className='col-5 project-list-item-name'>
+                <div className='item-name-section'>
+                  <div><img src={horizontal_line}/></div>
+                  <div>01</div>
+                  <div className='title'>
+                    Zblit
+                    <div className='sub-title'>next-generataion receipt
+                      splitting
+                      platform
+                    </div>
                   </div>
                 </div>
               </div>
+              {/* title */}
+              <div className='col-5 project-list-item-images'>
+                <ul>
+                  <li><img src={image}/></li>
+                  <li><img src={image}/></li>
+                </ul>
+              </div>
+              {/* images */}
+              <div className='col-4'></div>
+              {/* buffer zone*/}
+              <div className='col-3 project-list-item-view vertical-center'>
+                <img src={view_project}/>
+              </div>
+              {/* view-project button */}
             </div>
-            {/* title */}
-            <div className='col-5 project-list-item-images'>
-              <ul>
-                <li><img src={image}/></li>
-                <li><img src={image}/></li>
-              </ul>
-            </div>
-            {/* images */}
-            <div className='col-4'></div>
-            {/* buffer zone*/}
-            <div className='col-3 project-list-item-view vertical-center'>
-              <img src={view_project}/>
-            </div>
-            {/* view-project button */}
+            <div className='col-1'></div>
           </div>
-          <div className='col-1'></div>
+
+          <div className='row project-list'>
+            <div className='col-1'></div>
+            <div className='project-list-item-reverse col-10'>
+              <div className='col-3 project-list-item-view vertical-center'>
+                <img src={view_project}/>
+              </div>
+              {/* view-project button */}
+              <div className='col-4 project-list-item-space'></div>
+              {/* buffer zone*/}
+              <div className='col-5 project-list-item-name'>
+                <div className='item-name-section'>
+                  <div><img src={horizontal_line}/></div>
+                  <div>01</div>
+                  <div className='title'>
+                    Zblit
+                    <div className='sub-title'>next-generataion receipt
+                      splitting
+                      platform
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* title */}
+              <div className='col-5 project-list-item-images'>
+                <ul>
+                  <li><img src={image}/></li>
+                  <li><img src={image}/></li>
+                </ul>
+              </div>
+              {/* images */}
+            </div>
+            <div className='col-1'></div>
+          </div>
+
+          <div className='row project-list'>
+            <div className='col-1'></div>
+            <div className='project-list-item col-10'>
+              <div className='col-5 project-list-item-name'>
+                <div className='item-name-section'>
+                  <div><img src={horizontal_line}/></div>
+                  <div>01</div>
+                  <div className='title'>
+                    Zblit
+                    <div className='sub-title'>next-generataion receipt
+                      splitting
+                      platform
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* title */}
+              <div className='col-5 project-list-item-images'>
+                <ul>
+                  <li><img src={image}/></li>
+                  <li><img src={image}/></li>
+                </ul>
+              </div>
+              {/* images */}
+              <div className='col-4'></div>
+              {/* buffer zone*/}
+              <div className='col-3 project-list-item-view vertical-center'>
+                <img src={view_project}/>
+              </div>
+              {/* view-project button */}
+            </div>
+            <div className='col-1'></div>
+          </div>
+
+          <div className='row project-list'>
+            <div className='col-1'></div>
+            <div className='project-list-item-reverse col-10'>
+              <div className='col-3 project-list-item-view vertical-center'>
+                <img src={view_project}/>
+              </div>
+              {/* view-project button */}
+              <div className='col-4 project-list-item-space'></div>
+              {/* buffer zone*/}
+              <div className='col-5 project-list-item-name'>
+                <div className='item-name-section'>
+                  <div><img src={horizontal_line}/></div>
+                  <div>01</div>
+                  <div className='title'>
+                    Zblit
+                    <div className='sub-title'>next-generataion receipt
+                      splitting
+                      platform
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* title */}
+              <div className='col-5 project-list-item-images'>
+                <ul>
+                  <li><img src={image}/></li>
+                  <li><img src={image}/></li>
+                </ul>
+              </div>
+              {/* images */}
+            </div>
+            <div className='col-1'></div>
+          </div>
+
         </div>
 
-        <div className='row project-list'>
-          <div className='col-1'></div>
-          <div className='project-list-item-reverse col-10'>
-            <div className='col-3 project-list-item-view vertical-center'>
-              <img src={view_project}/>
-            </div>
-            {/* view-project button */}
-            <div className='col-4 project-list-item-space'></div>
-            {/* buffer zone*/}
-            <div className='col-5 project-list-item-name'>
-              <div className='item-name-section'>
-                <div><img src={horizontal_line}/></div>
-                <div>01</div>
-                <div className='title'>
-                  Zblit
-                  <div className='sub-title'>next-generataion receipt splitting
-                    platform
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* title */}
-            <div className='col-5 project-list-item-images'>
-              <ul>
-                <li><img src={image}/></li>
-                <li><img src={image}/></li>
-              </ul>
-            </div>
-            {/* images */}
-          </div>
-          <div className='col-1'></div>
-        </div>
-
-        <div className='row project-list'>
-          <div className='col-1'></div>
-          <div className='project-list-item col-10'>
-            <div className='col-5 project-list-item-name'>
-              <div className='item-name-section'>
-                <div><img src={horizontal_line}/></div>
-                <div>01</div>
-                <div className='title'>
-                  Zblit
-                  <div className='sub-title'>next-generataion receipt splitting
-                    platform
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* title */}
-            <div className='col-5 project-list-item-images'>
-              <ul>
-                <li><img src={image}/></li>
-                <li><img src={image}/></li>
-              </ul>
-            </div>
-            {/* images */}
-            <div className='col-4'></div>
-            {/* buffer zone*/}
-            <div className='col-3 project-list-item-view vertical-center'>
-              <img src={view_project}/>
-            </div>
-            {/* view-project button */}
-          </div>
-          <div className='col-1'></div>
-        </div>
-
-        <div className='row project-list'>
-          <div className='col-1'></div>
-          <div className='project-list-item-reverse col-10'>
-            <div className='col-3 project-list-item-view vertical-center'>
-              <img src={view_project}/>
-            </div>
-            {/* view-project button */}
-            <div className='col-4 project-list-item-space'></div>
-            {/* buffer zone*/}
-            <div className='col-5 project-list-item-name'>
-              <div className='item-name-section'>
-                <div><img src={horizontal_line}/></div>
-                <div>01</div>
-                <div className='title'>
-                  Zblit
-                  <div className='sub-title'>next-generataion receipt splitting
-                    platform
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* title */}
-            <div className='col-5 project-list-item-images'>
-              <ul>
-                <li><img src={image}/></li>
-                <li><img src={image}/></li>
-              </ul>
-            </div>
-            {/* images */}
-          </div>
-          <div className='col-1'></div>
-        </div>
-        
         <div className='row footer'>
           <ul className="float-left col-12 text-center">
             <li><img src={weibo_light}/></li>

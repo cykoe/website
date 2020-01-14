@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18d23ae3-e136-4775-830f-f39dbe4101a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/copyright.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/email_dark.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/email_light.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/horizontal_line.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/twitter_dark.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/twitter_light.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/vertical_line.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/view_project.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/weibo_dark.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/weibo_light.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/x.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/youtube_dark.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/youtube_light.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Apps.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Apps.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/col.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/col.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/header.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +96,7 @@
       <workItem from="1578576965478" duration="915000" />
       <workItem from="1578584395153" duration="8439000" />
       <workItem from="1578773626327" duration="6986000" />
-      <workItem from="1578958371340" duration="17479000" />
+      <workItem from="1578958371340" duration="19127000" />
     </task>
     <servers />
   </component>
