@@ -2,8 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18d23ae3-e136-4775-830f-f39dbe4101a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/col.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/copyright.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/email_dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/email_light.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/horizontal_line.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/twitter_dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/twitter_light.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/vertical_line.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/view_project.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/weibo_dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/weibo_light.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/x.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/youtube_dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/youtube_light.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Apps.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Apps.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/col.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/col.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/header.tsx" afterDir="false" />
     </list>
@@ -36,7 +52,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -48,7 +64,12 @@
     <property name="ts.external.directory.path" value="C:\Users\charlie\Documents\blog\website\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\charlie\Documents\blog\website\src" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\charlie\Documents\blog\website\src\assets" />
+      <recent name="C:\Users\charlie\Documents\blog\website\assets" />
       <recent name="C:\Users\charlie\Documents\blog\website\src" />
     </key>
   </component>
@@ -92,6 +113,8 @@
       <workItem from="1578383423208" duration="23956000" />
       <workItem from="1578576965478" duration="915000" />
       <workItem from="1578584395153" duration="8439000" />
+      <workItem from="1578773626327" duration="6986000" />
+      <workItem from="1578958371340" duration="17479000" />
     </task>
     <servers />
   </component>
@@ -107,17 +130,38 @@
       <screen x="0" y="0" width="1500" height="970" />
     </state>
     <state x="664" y="280" key="EditFileWatcherDialog/0.0.1500.970@0.0.1500.970" timestamp="1578445369990" />
+    <state x="1272" y="-799" key="FileChooserDialogImpl" timestamp="1579028935198">
+      <screen x="532" y="-1080" width="1920" height="1050" />
+    </state>
+    <state x="1272" y="-799" key="FileChooserDialogImpl/0.0.1500.970/532.-1080.1920.1050@532.-1080.1920.1050" timestamp="1579028935198" />
+    <state x="1299" y="-642" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579025566732">
+      <screen x="532" y="-1080" width="1920" height="1050" />
+    </state>
+    <state x="1299" y="-642" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1500.970/532.-1080.1920.1050@532.-1080.1920.1050" timestamp="1579025566732" />
     <state x="808" y="200" width="633" height="568" key="find.popup" timestamp="1578654741626">
       <screen x="0" y="0" width="1500" height="970" />
     </state>
     <state x="808" y="200" width="633" height="568" key="find.popup/0.0.1500.970@0.0.1500.970" timestamp="1578654741626" />
+    <state width="600" height="440" key="javadoc.popup" timestamp="1579030851447">
+      <screen x="532" y="-1080" width="1920" height="1050" />
+    </state>
+    <state width="600" height="440" key="javadoc.popup/0.0.1500.970/532.-1080.1920.1050@532.-1080.1920.1050" timestamp="1579030851447" />
     <state x="768" y="218" width="700" height="530" key="recent.locations.popup" timestamp="1578388648646">
       <screen x="0" y="0" width="1500" height="970" />
     </state>
     <state x="768" y="218" width="700" height="530" key="recent.locations.popup/0.0.1500.970@0.0.1500.970" timestamp="1578388648646" />
-    <state x="513" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1578654745037">
-      <screen x="0" y="0" width="1500" height="970" />
+    <state x="1148" y="-837" width="672" height="677" key="run.anything.popup" timestamp="1579021880440">
+      <screen x="532" y="-1080" width="1920" height="1050" />
     </state>
+    <state x="1148" y="-837" width="672" height="677" key="run.anything.popup/0.0.1500.970/532.-1080.1920.1050@532.-1080.1920.1050" timestamp="1579021880440" />
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1578996707607" />
+    <state x="1189" y="-819" width="861" height="736" key="search.everywhere.popup" timestamp="1579029195970">
+      <screen x="532" y="-1080" width="1920" height="1050" />
+    </state>
+    <state x="1189" y="-819" width="861" height="736" key="search.everywhere.popup/0.0.1500.970/532.-1080.1920.1050@532.-1080.1920.1050" timestamp="1579029195970" />
     <state x="513" y="240" width="672" height="678" key="search.everywhere.popup/0.0.1500.970@0.0.1500.970" timestamp="1578654745037" />
+    <state x="657" y="261" width="861" height="736" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1578996260048" />
+    <state x="657" y="268" width="861" height="756" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1578958981609" />
+    <state x="876" y="349" width="1147" height="985" key="search.everywhere.popup/0.0.2560.1409@0.0.2560.1409" timestamp="1578781150904" />
   </component>
 </project>
