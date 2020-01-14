@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18d23ae3-e136-4775-830f-f39dbe4101a4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Apps.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Apps.scss" afterDir="false" />
     </list>
@@ -43,6 +45,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\charlie\AppData\Roaming\npm\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Users\charlie\Documents\blog\website\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
@@ -96,7 +99,8 @@
       <workItem from="1578576965478" duration="915000" />
       <workItem from="1578584395153" duration="8439000" />
       <workItem from="1578773626327" duration="6986000" />
-      <workItem from="1578958371340" duration="19127000" />
+      <workItem from="1578958371340" duration="20428000" />
+      <workItem from="1579038907120" duration="499000" />
     </task>
     <servers />
   </component>
@@ -108,14 +112,22 @@
       <screen x="0" y="0" width="1500" height="970" />
     </state>
     <state x="431" y="214" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1500.970@0.0.1500.970" timestamp="1578577093633" />
+    <state x="1115" y="-1049" key="CommitChangelistDialog2" timestamp="1579038178481">
+      <screen x="532" y="-1080" width="1920" height="1050" />
+    </state>
+    <state x="1115" y="-1049" key="CommitChangelistDialog2/0.0.1500.970/532.-1080.1920.1050@532.-1080.1920.1050" timestamp="1579038178481" />
     <state x="664" y="280" key="EditFileWatcherDialog" timestamp="1578445369990">
       <screen x="0" y="0" width="1500" height="970" />
     </state>
     <state x="664" y="280" key="EditFileWatcherDialog/0.0.1500.970@0.0.1500.970" timestamp="1578445369990" />
-    <state x="1272" y="-799" key="FileChooserDialogImpl" timestamp="1579028935198">
+    <state x="1272" y="-799" key="FileChooserDialogImpl" timestamp="1579038774288">
       <screen x="532" y="-1080" width="1920" height="1050" />
     </state>
-    <state x="1272" y="-799" key="FileChooserDialogImpl/0.0.1500.970/532.-1080.1920.1050@532.-1080.1920.1050" timestamp="1579028935198" />
+    <state x="1272" y="-799" key="FileChooserDialogImpl/0.0.1500.970/532.-1080.1920.1050@532.-1080.1920.1050" timestamp="1579038774288" />
+    <state x="993" y="-912" key="SettingsEditor" timestamp="1579038886376">
+      <screen x="532" y="-1080" width="1920" height="1050" />
+    </state>
+    <state x="993" y="-912" key="SettingsEditor/0.0.1500.970/532.-1080.1920.1050@532.-1080.1920.1050" timestamp="1579038886376" />
     <state x="1299" y="-642" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579025566732">
       <screen x="532" y="-1080" width="1920" height="1050" />
     </state>
@@ -137,10 +149,10 @@
     </state>
     <state x="1148" y="-837" width="672" height="677" key="run.anything.popup/0.0.1500.970/532.-1080.1920.1050@532.-1080.1920.1050" timestamp="1579021880440" />
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1578996707607" />
-    <state x="1189" y="-819" width="861" height="736" key="search.everywhere.popup" timestamp="1579029195970">
+    <state x="1189" y="-819" width="861" height="736" key="search.everywhere.popup" timestamp="1579039181789">
       <screen x="532" y="-1080" width="1920" height="1050" />
     </state>
-    <state x="1189" y="-819" width="861" height="736" key="search.everywhere.popup/0.0.1500.970/532.-1080.1920.1050@532.-1080.1920.1050" timestamp="1579029195970" />
+    <state x="1189" y="-819" width="861" height="736" key="search.everywhere.popup/0.0.1500.970/532.-1080.1920.1050@532.-1080.1920.1050" timestamp="1579039181789" />
     <state x="513" y="240" width="672" height="678" key="search.everywhere.popup/0.0.1500.970@0.0.1500.970" timestamp="1578654745037" />
     <state x="657" y="261" width="861" height="736" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1578996260048" />
     <state x="657" y="268" width="861" height="756" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1578958981609" />

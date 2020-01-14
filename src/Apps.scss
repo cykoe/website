@@ -191,7 +191,7 @@ ul {
     opacity: 0;
   }
   to {
-    //transform: translateX(10%);
+    //transform: translateX(10%);,
     opacity: 1;
   }
 }
@@ -222,4 +222,9 @@ ul {
 
 .project-list-section {
   padding-bottom: 5%;
+}
+
+img {
+  width: 200px;
+  height: 200px;
 }
