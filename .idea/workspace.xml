@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18d23ae3-e136-4775-830f-f39dbe4101a4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Apps.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Apps.scss" afterDir="false" />
     </list>
@@ -100,7 +98,7 @@
       <workItem from="1578584395153" duration="8439000" />
       <workItem from="1578773626327" duration="6986000" />
       <workItem from="1578958371340" duration="20428000" />
-      <workItem from="1579038907120" duration="499000" />
+      <workItem from="1579038907120" duration="14768000" />
     </task>
     <servers />
   </component>
@@ -144,16 +142,17 @@
       <screen x="0" y="0" width="1500" height="970" />
     </state>
     <state x="768" y="218" width="700" height="530" key="recent.locations.popup/0.0.1500.970@0.0.1500.970" timestamp="1578388648646" />
-    <state x="1148" y="-837" width="672" height="677" key="run.anything.popup" timestamp="1579021880440">
-      <screen x="532" y="-1080" width="1920" height="1050" />
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1579096735413">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1148" y="-837" width="672" height="677" key="run.anything.popup/0.0.1500.970/532.-1080.1920.1050@532.-1080.1920.1050" timestamp="1579021880440" />
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1578996707607" />
-    <state x="1189" y="-819" width="861" height="736" key="search.everywhere.popup" timestamp="1579039181789">
-      <screen x="532" y="-1080" width="1920" height="1050" />
+    <state x="482" y="225" width="525" height="626" key="run.anything.popup/0.0.1500.970@0.0.1500.970" timestamp="1579082297725" />
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1579096735413" />
+    <state x="516" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1579082713409">
+      <screen x="0" y="0" width="1500" height="970" />
     </state>
     <state x="1189" y="-819" width="861" height="736" key="search.everywhere.popup/0.0.1500.970/532.-1080.1920.1050@532.-1080.1920.1050" timestamp="1579039181789" />
-    <state x="513" y="240" width="672" height="678" key="search.everywhere.popup/0.0.1500.970@0.0.1500.970" timestamp="1578654745037" />
+    <state x="516" y="243" width="672" height="678" key="search.everywhere.popup/0.0.1500.970@0.0.1500.970" timestamp="1579082713409" />
     <state x="657" y="261" width="861" height="736" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1578996260048" />
     <state x="657" y="268" width="861" height="756" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1578958981609" />
     <state x="876" y="349" width="1147" height="985" key="search.everywhere.popup/0.0.2560.1409@0.0.2560.1409" timestamp="1578781150904" />

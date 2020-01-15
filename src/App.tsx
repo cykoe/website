@@ -62,6 +62,7 @@ const App: React.FC = () => {
                     <img src={MainLogo}/>
                   </div>
                   <div className='col-2 vertical-bottom'>
+                    {/*TODO: align center and verrtical line*/}
                     <p className='scroll-down-text'>Scroll Down</p>
                     <img src={vertial_line}/>
                   </div>
@@ -70,18 +71,23 @@ const App: React.FC = () => {
               </div>
 
               <div className='project-list-section'>
-
                 <div className='row project-list'>
                   <div className='col-1'></div>
                   <div className='project-list-item col-10'>
+                    <div className='col-5 project-list-item-images'>
+                      <ul>
+                        <li><a href='/projects'><img src={image}/></a></li>
+                        <li><img src={image}/></li>
+                      </ul>
+                    </div>
+                    {/* images */}
                     <div className='col-5 project-list-item-name'>
                       <div className='item-name-section'>
-                        <div><img src={horizontal_line}/></div>
-                        <div>01</div>
-                        <Link to="/projects">About</Link>
-                        <div className='title'>
+                        <div className='font-3em'><img src={horizontal_line}/></div>
+                        <div className='font-3em'>01</div>
+                        <div className='title font-3em'>
                           Zblit
-                          <div className='sub-title'>next-generataion receipt
+                          <div className='sub-title font-2em'>next-generataion receipt
                             splitting
                             platform
                           </div>
@@ -89,13 +95,6 @@ const App: React.FC = () => {
                       </div>
                     </div>
                     {/* title */}
-                    <div className='col-5 project-list-item-images'>
-                      <ul>
-                        <li><img src={image}/></li>
-                        <li><img src={image}/></li>
-                      </ul>
-                    </div>
-                    {/* images */}
                     <div className='col-4'></div>
                     {/* buffer zone*/}
                     <div
@@ -115,85 +114,15 @@ const App: React.FC = () => {
                       <img src={view_project}/>
                     </div>
                     {/* view-project button */}
-                    <div className='col-4 project-list-item-space'></div>
+                    <div className='col-2 project-list-item-space'></div>
                     {/* buffer zone*/}
                     <div className='col-5 project-list-item-name'>
                       <div className='item-name-section'>
-                        <div><img src={horizontal_line}/></div>
-                        <div>01</div>
-                        <div className='title'>
+                        <div className='font-3em'><img src={horizontal_line}/></div>
+                        <div className='font-3em'>01</div>
+                        <div className='title font-3em'>
                           Zblit
-                          <div className='sub-title'>next-generataion receipt
-                            splitting
-                            platform
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    {/* title */}
-                    <div className='col-5 project-list-item-images'>
-                      <ul>
-                        <li><img src={image}/></li>
-                        <li><img src={image}/></li>
-                      </ul>
-                    </div>
-                    {/* images */}
-                  </div>
-                  <div className='col-1'></div>
-                </div>
-
-                <div className='row project-list'>
-                  <div className='col-1'></div>
-                  <div className='project-list-item col-10'>
-                    <div className='col-5 project-list-item-name'>
-                      <div className='item-name-section'>
-                        <div><img src={horizontal_line}/></div>
-                        <div>01</div>
-                        <div className='title'>
-                          Zblit
-                          <div className='sub-title'>next-generataion receipt
-                            splitting
-                            platform
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    {/* title */}
-                    <div className='col-5 project-list-item-images'>
-                      <ul>
-                        <li><img src={image}/></li>
-                        <li><img src={image}/></li>
-                      </ul>
-                    </div>
-                    {/* images */}
-                    <div className='col-4'></div>
-                    {/* buffer zone*/}
-                    <div
-                        className='col-3 project-list-item-view vertical-center'>
-                      <img src={view_project}/>
-                    </div>
-                    {/* view-project button */}
-                  </div>
-                  <div className='col-1'></div>
-                </div>
-
-                <div className='row project-list'>
-                  <div className='col-1'></div>
-                  <div className='project-list-item-reverse col-10'>
-                    <div
-                        className='col-3 project-list-item-view vertical-center'>
-                      <img src={view_project}/>
-                    </div>
-                    {/* view-project button */}
-                    <div className='col-4 project-list-item-space'></div>
-                    {/* buffer zone*/}
-                    <div className='col-5 project-list-item-name'>
-                      <div className='item-name-section'>
-                        <div><img src={horizontal_line}/></div>
-                        <div>01</div>
-                        <div className='title'>
-                          Zblit
-                          <div className='sub-title'>next-generataion receipt
+                          <div className='sub-title font-2em'>next-generataion receipt
                             splitting
                             platform
                           </div>
@@ -229,44 +158,44 @@ const App: React.FC = () => {
           </Switch>
         </div>
       </Router>
-  );
+);
 };
 
 function Project() {
   return (
-      <div className='row'>
-        <div className='col-6'>
-          <div className='row'>
-            <img src={Logo} />
-          </div>
-          <div className='row'>
-            <p>
-              about the project
-            </p>
-            <p>asdkjashgdj adhasjdsa asdsha jahdjashdjgshdj sgadhjsgd
-              gasjdgsaj </p>
-          </div>
-          <div className='row'>
-            <p>see the product</p>
-          </div>
-          <div className="row">
-            <p>see the source code</p>
-          </div>
-          <div className="row"><span><img src={horizontal_line} alt=""/></span>
-            <p>previous product</p></div>
-          <div className="row"><span><img src={horizontal_line}/></span>
-            <p>next product</p>
-          </div>
-        </div>
-        <div className='col-6 img'>
-          <ul>
-            <li><img src={image} alt=""/></li>
-            <li><img src={image} alt=""/></li>
-            <li><img src={image} alt=""/></li>
-            <li><img src={image} alt=""/></li>
-          </ul>
-        </div>
-      </div>
+  <div className='row'>
+  <div className='col-6'>
+  <div className='row'>
+  <img src={Logo}/>
+  </div>
+  <div className='row'>
+  <p>
+  about the project
+  </p>
+  <p>asdkjashgdj adhasjdsa asdsha jahdjashdjgshdj sgadhjsgd
+  gasjdgsaj </p>
+  </div>
+  <div className='row'>
+  <p>see the product</p>
+  </div>
+  <div className="row">
+  <p>see the source code</p>
+  </div>
+  <div className="row"><span><img src={horizontal_line} alt=""/></span>
+  <p>previous product</p></div>
+  <div className="row"><span><img src={horizontal_line}/></span>
+  <p>next product</p>
+  </div>
+  </div>
+  <div className='col-6 img'>
+  <ul>
+  <li><img src={image} alt=""/></li>
+  <li><img src={image} alt=""/></li>
+  <li><img src={image} alt=""/></li>
+  <li><img src={image} alt=""/></li>
+  </ul>
+  </div>
+  </div>
   );
 }
 
