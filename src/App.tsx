@@ -38,7 +38,7 @@ const App: React.FC = () => {
           </div>
           <div className='row introduction'>
             {/*TODO: restore this*/}
-            {/*<div className='col-1 col-xl-2 col-xs-1'/>*/}
+            <div className='col-1 col-xl-2 col-xs-1 introduction__buffer'/>
             <div className='col-2 col-l-3 col-xl-1 col-xs-2 vertical-align--bottom introduction__logos'>
               <ul>
                 <li><img src={weibo_dark} alt="weibo"/></li>
@@ -54,8 +54,16 @@ const App: React.FC = () => {
             <div className='col-4 col-xl-3 col-xs-6 vertical-align--center introduction__logo'>
               <img src={MainLogo} alt=""/>
             </div>
+            <div className='col-xs-9 vertical-align--bottom introduction__logos--small'>
+              <ul>
+                <li><img src={weibo_dark} alt="weibo"/></li>
+                <li><img src={twitter_dark} alt="twitter"/></li>
+                <li><img src={youtube_dark} alt="youtube"/></li>
+                <li><img src={email_dark} alt="email"/></li>
+              </ul>
+            </div>
             <div className='col-2 col-xs-2 vertical-align--bottom text-center introduction__scroll'>
-              <span className='scroll-down-text'>SCROLL DOWN</span>
+              <span className='scroll-down-text'><p className='font-1--0em'>SCROLL DOWN</p></span>
               <img src={vertial_line} alt="line"/>
             </div>
           </div>
@@ -98,7 +106,7 @@ const App: React.FC = () => {
               <div className='col-1 col-l-4 project__buffer'/>
               <div className='col-8 col-l-5 project__title'>
                 <div className='item-name-section'>
-                  <div className='font-2--5em'>01</div>
+                  <div className='font-2--0em'>01</div>
                   <div>
                     <p className='font-2--0em'>Zblit</p>
                     <p className='font-1--1em'>next-generation receipt splitting

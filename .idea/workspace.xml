@@ -4,8 +4,6 @@
     <list default="true" id="18d23ae3-e136-4775-830f-f39dbe4101a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Apps.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Apps.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/copyright.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/copyright.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/col.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/col.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +101,7 @@
       <workItem from="1579038907120" duration="14768000" />
       <workItem from="1579110009930" duration="1379000" />
       <workItem from="1579118412433" duration="5712000" />
-      <workItem from="1579181744690" duration="11284000" />
+      <workItem from="1579181744690" duration="14272000" />
     </task>
     <servers />
   </component>
