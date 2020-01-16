@@ -17,23 +17,18 @@ ul {
   }
 }
 
-.App {
+.app {
   background-color: #F0ECE2;
   font-family: 'Microsoft Uighur', sans-serif;
   font-size: 1.5em;
   padding: 0 12px 0 8px;
 
-  .main-page {
+  .main {
     padding: 5% 0 5% 0;
     height: 100vh;
     display: flex;
     flex-direction: column;
   }
-}
-
-.scroll-down-text {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
 }
 
 .project-list-item {
@@ -50,6 +45,7 @@ ul {
     ul {
       margin: 0;
       display: inline;
+
       img {
         height: 170px;
         border-radius: 20%;
@@ -73,6 +69,7 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
     p {
       margin: 0;
       padding: 0;
@@ -117,6 +114,7 @@ ul {
     ul {
       margin: 0;
       display: inline;
+
       img {
         height: 170px;
         border-radius: 20%;
@@ -229,41 +227,119 @@ ul {
   }
 }
 
-.vertical-center {
+.vertical-align--center {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.vertical-bottom {
+.vertical-align--bottom {
   height: 100%;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: flex-end;
 }
 
-.flex-grow-1 {
+.introduction {
   flex-grow: 1;
 
   [class*="col-"] {
     height: 100%;
   }
+
+  .introduction__titles {
+    padding-right: 0;
+  }
+
+  .introduction__logo {
+    padding-left: 0;
+  }
+
+  .introduction__scroll {
+    span {
+      transform: rotate(90deg);
+    }
+  }
 }
 
-.project-list-section {
+.project-list {
   padding-bottom: 5%;
 }
 
-//img {
-//  width: 200px;
-//  height: 200px;
-//}
-
-.font-3em {
-  font-size: 2em;
+.font-2--0em {
+  font-size: 2.0em;
 }
 
-.font-2em {
-  font-size: 0.5em;
+.font-2--1em {
+  font-size: 2.1em
+}
+
+.font-2--2em {
+  font-size: 2.2em
+}
+
+.font-2--3em {
+  font-size: 2.3em
+}
+
+.font-2--4em {
+  font-size: 2.4em
+}
+
+.font-2--5em {
+  font-size: 2.5em
+}
+
+.font-2--6em {
+  font-size: 2.6em
+}
+
+.font-2--7em {
+  font-size: 2.7em
+}
+
+.font-2--8em {
+  font-size: 2.8em
+}
+
+.font-2--9em {
+  font-size: 2.9em
+}
+
+.font-1--1em {
+  font-size: 1.1em
+}
+
+.font-1--2em {
+  font-size: 1.2em
+}
+
+.font-1--3em {
+  font-size: 1.3em
+}
+
+.font-1--4em {
+  font-size: 1.4em
+}
+
+.font-1--5em {
+  font-size: 1.5em
+}
+
+.font-1--6em {
+  font-size: 1.6em
+}
+
+.font-1--7em {
+  font-size: 1.7em
+}
+
+.font-1--8em {
+  font-size: 1.8em
+}
+
+.font-1--9em {
+  font-size: 1.9em
 }
