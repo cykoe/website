@@ -1,0 +1,25 @@
+<svg id="view_project" xmlns="http://www.w3.org/2000/svg" width="208" height="75" viewBox="0 0 208 75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #010101;
+      }
+
+      .cls-2 {
+        fill: #f0ece2;
+        font-size: 24px;
+        font-family: MicrosoftUighur, Microsoft Uighur;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #f0ece2;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_17" data-name="Rectangle 17" class="cls-1" width="208" height="75"/>
+  <g id="Group_38" data-name="Group 38" transform="translate(11.413 7.517)">
+    <text id="View_Project-2" data-name="View Project" class="cls-2" transform="translate(26.587 36.483)"><tspan x="0" y="0">View Project</tspan></text>
+    <path id="Path_26" data-name="Path 26" class="cls-3" d="M2001.34,1003.128v17.814H1876.153V980.25h185.113l-14.185-10.16" transform="translate(-1876.153 -970.09)"/>
+  </g>
+</svg>

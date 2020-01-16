@@ -1,0 +1,46 @@
+<svg id="Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <style>
+      .cls-1, .cls-5 {
+        fill: #32407b;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        fill: #515585;
+      }
+
+      .cls-4, .cls-5 {
+        fill-rule: evenodd;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_7" data-name="Rectangle 7" class="cls-1" width="60" height="60"/>
+    </clipPath>
+  </defs>
+  <g id="Group_10" data-name="Group 10">
+    <g id="container-id1">
+      <g id="id1" class="cls-2">
+        <g id="Group_9" data-name="Group 9">
+          <g id="Group_8" data-name="Group 8">
+            <g id="id3">
+              <rect id="Rectangle_6" data-name="Rectangle 6" class="cls-3" width="60" height="60"/>
+              <path id="Path_18" data-name="Path 18" class="cls-4" d="M2537.627,3763,2520,3771.82v12.215l29.827-14.928Z" transform="translate(-2490.006 -3724.179)"/>
+              <path id="Path_19" data-name="Path 19" class="cls-5" d="M13,3769.107l29.839,14.928,12.2-6.107L25.212,3763Z" transform="translate(-12.845 -3724.179)"/>
+              <path id="Path_20" data-name="Path 20" class="cls-4" d="M13,1460v29.866l12.212,6.107v-29.866Z" transform="translate(-12.845 -1444.938)"/>
+              <path id="Path_21" data-name="Path 21" class="cls-5" d="M42.839,13,13,27.928V40.142L42.839,25.215Z" transform="translate(-12.845 -12.866)"/>
+              <path id="Path_22" data-name="Path 22" class="cls-4" d="M1507.2,13,1495,19.107l29.839,14.928,12.2-6.1v-.01Z" transform="translate(-1477.206 -12.866)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
