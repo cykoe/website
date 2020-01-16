@@ -1,8 +1,5 @@
 import React from 'react';
 import './Apps.scss';
-import Header from './header';
-import Main from './main';
-import Footer from './footer';
 import './col.scss';
 import Logo from './assets/logo.svg';
 import MainLogo from './assets/x.svg';
