@@ -1,6 +1,5 @@
 import React from 'react';
 import './Apps.scss';
-import './col.scss';
 import Logo from './assets/logo.svg';
 import MainLogo from './assets/x.svg';
 import weibo_dark from './assets/weibo_dark.svg';
@@ -11,36 +10,31 @@ import youtube_dark from './assets/youtube_dark.svg';
 import youtube_light from './assets/youtube_light.svg';
 import twitter_dark from './assets/twitter_dark.svg';
 import twitter_light from './assets/twitter_light.svg';
-import horizontal_line from './assets/horizontal_line.svg';
-import vertical_line from './assets/vertical_line.svg';
-import view_project from './assets/view_project.svg';
 import copyright from './assets/copyright.svg';
-import image from './assets/image.png';
-import {BrowserRouter, Route, Link} from 'react-router-dom';
-import Project from './project';
+import Project, {IIProject} from './project';
 import axios from 'axios';
+
 const ReactMarkdown = require('react-markdown');
-const projectsUrl = 'https://raw.githubusercontent.com/sircharlie/diary/master/projects.json';
-const hi = 'hi';
+const url = 'https://raw.githubusercontent.com/sircharlie/diary/master/projects.json';
+
 class App extends React.Component {
-  state = {
-    descriptions: []
+  state: any = {
+    items: [],
   };
 
   async componentDidMount() {
-    const response = await axios.get(projectsUrl);
-    this.setState({descriptions: response.data});
+    const response = await axios.get(url);
+    this.setState({items: response.data});
   }
 
   render() {
-    console.log(this.state.descriptions);
     return (
         <div className="App">
           <div className='main-section'>
             <div className='row'>
               <div className='col-1 col-xl-2'/>
               <div className="col-1">
-                <img src={Logo} alt="logo"/>
+                <img src={Logo} alt="logo" className='CLogo'/>
               </div>
             </div>
             <div className='row introduction'>
@@ -61,7 +55,7 @@ class App extends React.Component {
                 <p className='font-1--3em'>Software Engineer</p>
               </div>
               <div
-                  className='col-4 col-xl-3 col-xs-6 vertical-align--center introduction__logo'>
+                  className='col-5 col-xl-3 col-xs-6 vertical-align--center introduction__logo'>
                 <img src={MainLogo} alt=""/>
               </div>
               <div
@@ -76,46 +70,18 @@ class App extends React.Component {
               <div
                   className='col-2 col-xs-2 vertical-align--bottom text-center introduction__scroll'>
                 <span className='scroll-down-text'><p className='font-1--0em'>SCROLL DOWN</p></span>
-                <img src={vertical_line} alt="line"/>
               </div>
             </div>
           </div>
 
           <div className='list-section'>
-            <div className='row list-section__item'>
-              <div className='col-2 col-xl-3'/>
-              {this.state.descriptions.map((description) => <Project description={description}/>)}
-              <div className='col-1 col-xl-2'/>
-            </div>
-
-            <div className='row list-section__item'>
-              <div className='col-1 col-xl-2'/>
-              <div className='col-9 col-xl-7 project--reverse'>
-                <div
-                    className='col-3 col-l-3 project__view vertical-align--center'>
-                  <img src={view_project} alt=""/>
-                </div>
-                <div className='col-1 col-l-4 project__buffer'/>
-                <div className='col-8 col-l-5 project__title'>
-                  <div className='item-name-section'>
-                    <div className='font-2--0em'>01</div>
-                    <div>
-                      <p className='font-2--0em'>Zblit</p>
-                      <p className='font-1--1em'>next-generation receipt
-                        splitting
-                        platform</p>
-                    </div>
-                  </div>
-                </div>
-                <div className='col-4 col-l-5 project__images'>
-                  <ul>
-                    <li><img src={image} alt=""/></li>
-                    <li><img src={image} alt=""/></li>
-                  </ul>
-                </div>
-              </div>
-              <div className='col-2 col-xl-3'/>
-            </div>
+            {this.state.items.map(
+                (item: IIProject, index: number) => <Project
+                    key={index} index={index} name={item.name}
+                    description={item.description}
+                    images={item.images}
+                    technology={item.technology}
+                    reverse={index % 2 !== 0}/>)}
           </div>
 
           <div className='footer-section text-center'>
