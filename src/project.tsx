@@ -4,7 +4,6 @@ import './project.scss';
 import angular from './assets/angular.svg';
 import react from './assets/react.svg';
 import vue from './assets/vue.svg';
-import view_project from './assets/view_project.svg';
 import tensorflow from './assets/tensorflow.svg';
 import gcp from './assets/gcp.svg';
 import mysql from './assets/mysql.svg';
@@ -15,11 +14,11 @@ import flutter from './assets/flutter.svg';
 import aws from './assets/aws.svg';
 
 const imageUrl = 'https://raw.githubusercontent.com/sircharlie/diary/master/';
+
 const imageDict: any = {
   'angular': angular,
   'react': react,
   'vue': vue,
-  'view_project': view_project,
   'tensorflow': tensorflow,
   'gcp': gcp,
   'mysql': mysql,
@@ -63,11 +62,6 @@ export default function Project(props: IIProject) {
                   </div>
                 </div>
               </div>
-              {/*<div className='col-1 col-l-4'/>*/}
-              {/*<div*/}
-              {/*    className='col-3 col-l-3 project__view vertical-align--center'>*/}
-              {/*  <img src={view_project} alt=""/>*/}
-              {/*</div>*/}
             </div>
             <div className='col-1 col-xl-2'/>
           </div>
@@ -77,9 +71,6 @@ export default function Project(props: IIProject) {
           <div className='row list-section__item'>
             <div className='col-1 col-xl-2'/>
             <div className='col-9 col-xl-7 project--reverse'>
-              {/*<div className='col-3 col-l-3 project__view vertical-align--center'>*/}
-              {/*  <img src={view_project} alt=""/>*/}
-              {/*</div>*/}
               <div className='col-1 col-l-6 project__buffer'/>
               <div className='col-8 col-l-5 project__title'>
                 <div className='item-name-section'>

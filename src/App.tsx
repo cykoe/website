@@ -13,8 +13,8 @@ import twitter_light from './assets/twitter_light.svg';
 import copyright from './assets/copyright.svg';
 import Project, {IIProject} from './project';
 import axios from 'axios';
+import Detail from './detail';
 
-const ReactMarkdown = require('react-markdown');
 const url = 'https://raw.githubusercontent.com/sircharlie/diary/master/projects.json';
 
 class App extends React.Component {
@@ -30,6 +30,7 @@ class App extends React.Component {
   render() {
     return (
         <div className="App">
+          <Detail/>
           <div className='main-section'>
             <div className='row'>
               <div className='col-1 col-xl-2'/>
@@ -98,83 +99,6 @@ class App extends React.Component {
           </div>
         </div>
     );
-  }
-}
-
-// function Project() {
-//   return (
-//       <div className='row'>
-//         <div className='col-6'>
-//           <div className='row'>
-//             <img src={Logo}/>
-//           </div>
-//           <div className='row'>
-//             <p>
-//               about the project
-//             </p>
-//             <p>asdkjashgdj adhasjdsa asdsha jahdjashdjgshdj sgadhjsgd
-//               gasjdgsaj </p>
-//           </div>
-//           <div className='row'>
-//             <p>see the product</p>
-//           </div>
-//           <div className="row">
-//             <p>see the source code</p>
-//           </div>
-//           <div className="row"><span><img src={horizontal_line} alt=""/></span>
-//             <p>previous product</p></div>
-//           <div className="row"><span><img src={horizontal_line}/></span>
-//             <p>next product</p>
-//           </div>
-//         </div>
-//         <div className='col-6 img'>
-//           <ul>
-//             <li><img src={image} alt=""/></li>
-//             <li><img src={image} alt=""/></li>
-//             <li><img src={image} alt=""/></li>
-//             <li><img src={image} alt=""/></li>
-//           </ul>
-//         </div>
-//       </div>
-//   );
-// }
-
-class PersonList extends React.Component {
-  state = {
-    contents: [],
-    descriptions: [],
-  };
-
-  componentDidMount() {
-    // axios.get('https://api.github.com/repos/sircharlie/diary/contents').
-    //     then(res => {
-    //       const repos = res.data.map((d: any) => d.download_url);
-    //       return Promise.all(
-    //           repos.filter((r: any) => !!r).map((r: any) => axios.get(r)));
-    //     }).then(res => {
-    //   res.forEach((r: any) => {
-    //     if (Array.isArray(r)) {
-    //       this.setState({descriptions: res.map((r: any) => r.data)});
-    //
-    //     } else {
-    //       this.setState({contents: res.map((r: any) => r.data)});
-    //     }
-    //
-    //   });
-    // });
-    // axios.get('https://raw.githubusercontent.com/sircharlie/diary/master/projects.json').
-    //     then(res => {
-    //       this.setState({descriptions: res.data})
-    //     })
-  }
-
-  render() {
-    // console.log(this.state.contents);
-    console.log(this.state.descriptions);
-    if (this.state.contents[0]) {
-      return (<ReactMarkdown source={this.state.contents[0]}/>);
-    }
-    return (<div></div>);
   }
 }
 

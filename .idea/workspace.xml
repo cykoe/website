@@ -2,23 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18d23ae3-e136-4775-830f-f39dbe4101a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/alibaba.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/angular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/aws.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/flutter.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/gcp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/mongoDb.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/mysql.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/react.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/serverless.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/tensorflow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/vue.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/font.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/arrow_back.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/arrow_forward.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/view.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/detail.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/detail.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Apps.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Apps.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/project.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/project.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/font.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/font.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/project.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/project.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +111,7 @@
       <workItem from="1579110009930" duration="1379000" />
       <workItem from="1579118412433" duration="5712000" />
       <workItem from="1579181744690" duration="22602000" />
-      <workItem from="1579218393663" duration="20357000" />
+      <workItem from="1579218393663" duration="22750000" />
     </task>
     <servers />
   </component>
@@ -186,14 +176,14 @@
     <state x="1148" y="-837" width="672" height="677" key="run.anything.popup/0.0.1500.970/532.-1080.1920.1050@532.-1080.1920.1050" timestamp="1579021880440" />
     <state x="485" y="228" width="525" height="626" key="run.anything.popup/0.0.1500.970@0.0.1500.970" timestamp="1579287697507" />
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1579181914836" />
-    <state x="543" y="267" width="672" height="678" key="search.everywhere.popup" timestamp="1579287777409">
+    <state x="551" y="275" width="672" height="678" key="search.everywhere.popup" timestamp="1579299400378">
       <screen x="0" y="0" width="1500" height="970" />
     </state>
     <state x="518" y="253" width="673" height="702" key="search.everywhere.popup/0.0.1500.1000/532.-1080.1920.1080@0.0.1500.1000" timestamp="1579207505697" />
     <state x="1189" y="-812" width="861" height="758" key="search.everywhere.popup/0.0.1500.1000/532.-1080.1920.1080@532.-1080.1920.1080" timestamp="1579197110035" />
     <state x="520" y="247" width="673" height="681" key="search.everywhere.popup/0.0.1500.970/532.-1080.1920.1050@0.0.1500.970" timestamp="1579219072569" />
     <state x="1189" y="-819" width="861" height="736" key="search.everywhere.popup/0.0.1500.970/532.-1080.1920.1050@532.-1080.1920.1050" timestamp="1579039181789" />
-    <state x="543" y="267" width="672" height="678" key="search.everywhere.popup/0.0.1500.970@0.0.1500.970" timestamp="1579287777409" />
+    <state x="551" y="275" width="672" height="678" key="search.everywhere.popup/0.0.1500.970@0.0.1500.970" timestamp="1579299400378" />
     <state x="657" y="261" width="861" height="736" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1579187508160" />
     <state x="657" y="268" width="861" height="756" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1578958981609" />
     <state x="876" y="349" width="1147" height="985" key="search.everywhere.popup/0.0.2560.1409@0.0.2560.1409" timestamp="1578781150904" />
