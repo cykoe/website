@@ -11,7 +11,7 @@ import youtube_light from './assets/youtube_light.svg';
 import twitter_dark from './assets/twitter_dark.svg';
 import twitter_light from './assets/twitter_light.svg';
 import copyright from './assets/copyright.svg';
-import Project, {IIProject} from './project';
+import Project, {IProject} from './project';
 import axios from 'axios';
 import Detail from './detail';
 
@@ -30,7 +30,7 @@ class App extends React.Component {
   render() {
     return (
         <div className="App">
-          <Detail/>
+          {this.state.items.map((item: IProject, index: number) => <Detail key={index} index={index} name={item.name} description={''} images={[]} reverse={true} technology={[]} about={item.about} platform={item.platform} category={item.category} detail={item.detail}/>)}
           <div className='main-section'>
             <div className='row'>
               <div className='col-1 col-xl-2'/>
@@ -77,12 +77,12 @@ class App extends React.Component {
 
           <div className='list-section'>
             {this.state.items.map(
-                (item: IIProject, index: number) => <Project
+                (item: IProject, index: number) => <Project
                     key={index} index={index} name={item.name}
                     description={item.description}
                     images={item.images}
                     technology={item.technology}
-                    reverse={index % 2 !== 0}/>)}
+                    reverse={index % 2 !== 0} about={''} platform={[]} category={[]} detail={''}/>)}
           </div>
 
           <div className='footer-section text-center'>

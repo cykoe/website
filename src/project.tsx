@@ -30,17 +30,20 @@ const imageDict: any = {
 };
 
 
-export interface IIProject {
+export interface IProject {
   index: number;
   name: string;
   description: string;
   images: string[];
   reverse: boolean;
   technology: string[];
+  about: string;
+  platform: string[];
+  category: string[];
+  detail: string;
 }
 
-export default function Project(props: IIProject) {
-  console.log(props.technology);
+export default function Project(props: IProject) {
   return props.reverse ?
       (
           <div className='row list-section__item'>
