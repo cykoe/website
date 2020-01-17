@@ -1,23 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0b14405cc6b587be4e3dc2d1e9850e28",
+    "revision": "f1151ba97e7325599a4332dc772c3109",
     "url": "/website/index.html"
   },
   {
-    "revision": "ec015db58ba9e1f468d6",
-    "url": "/website/static/css/main.c9df9159.chunk.css"
+    "revision": "9f74b24c0b5578ebab13",
+    "url": "/website/static/css/main.84754625.chunk.css"
   },
   {
-    "revision": "37110b9b1b9e694115ae",
-    "url": "/website/static/js/2.6290afd6.chunk.js"
+    "revision": "1212fdd79f4bcd54a2e8",
+    "url": "/website/static/js/2.2fa382c1.chunk.js"
   },
   {
-    "revision": "ec015db58ba9e1f468d6",
-    "url": "/website/static/js/main.7257ddcd.chunk.js"
+    "revision": "9f74b24c0b5578ebab13",
+    "url": "/website/static/js/main.f1ca42b5.chunk.js"
   },
   {
     "revision": "67ecb4e840c5e82ddaec",
     "url": "/website/static/js/runtime-main.14dbd8b4.js"
+  },
+  {
+    "revision": "9890ab75db675622539164fb9355fb2c",
+    "url": "/website/static/media/alibaba.9890ab75.svg"
+  },
+  {
+    "revision": "5c69e565f1ae6d7717fb3ecd2be004ad",
+    "url": "/website/static/media/angular.5c69e565.svg"
+  },
+  {
+    "revision": "5830aea31048886122a87b581cfe1c81",
+    "url": "/website/static/media/aws.5830aea3.svg"
   },
   {
     "revision": "807889f3178d650169db4fb1f5342607",
@@ -32,16 +44,36 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/website/static/media/email_light.c97ecce2.svg"
   },
   {
-    "revision": "c8c3ab525895cce52833deb6cafd75a9",
-    "url": "/website/static/media/horizontal_line.c8c3ab52.svg"
+    "revision": "faf8f499559f6b2f815f454a5794eae3",
+    "url": "/website/static/media/flutter.faf8f499.svg"
   },
   {
-    "revision": "07a19746839bb2cd924fdd0483238e86",
-    "url": "/website/static/media/image.07a19746.png"
+    "revision": "a711d8f75de4426eb710b3b8b1db5d7b",
+    "url": "/website/static/media/gcp.a711d8f7.svg"
   },
   {
     "revision": "60cc350fcc6c45fc5a3df4e478c7be43",
     "url": "/website/static/media/logo.60cc350f.svg"
+  },
+  {
+    "revision": "554c7d4bfd63a3da33773978fd291c06",
+    "url": "/website/static/media/mongoDb.554c7d4b.svg"
+  },
+  {
+    "revision": "f80a91ba03fbf0e99ea6949aa3a6399e",
+    "url": "/website/static/media/mysql.f80a91ba.svg"
+  },
+  {
+    "revision": "84287d09b8053c6fa598893b8910786a",
+    "url": "/website/static/media/react.84287d09.svg"
+  },
+  {
+    "revision": "b3967dbabfe61c3288c7aa46d36663e0",
+    "url": "/website/static/media/serverless.b3967dba.svg"
+  },
+  {
+    "revision": "6f83f74d3d9e3e2bc737f66c599156fa",
+    "url": "/website/static/media/tensorflow.6f83f74d.svg"
   },
   {
     "revision": "4108540e1195b5632a8428e33c1e2b57",
@@ -52,12 +84,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/website/static/media/twitter_light.f9140151.svg"
   },
   {
-    "revision": "cf9e46ad653d6bb91fc49ced6f941429",
-    "url": "/website/static/media/vertical_line.cf9e46ad.svg"
-  },
-  {
     "revision": "4ba10a6a2ed4fcff9533c275173921a6",
     "url": "/website/static/media/view_project.4ba10a6a.svg"
+  },
+  {
+    "revision": "9a45fc7689867939804c469bfcd17784",
+    "url": "/website/static/media/vue.9a45fc76.svg"
   },
   {
     "revision": "f6bce9f66a0fc56039ffd274f80dff19",
