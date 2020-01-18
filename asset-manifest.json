@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.4b972597.chunk.css",
-    "main.js": "/website/static/js/main.b4bf3c3b.chunk.js",
-    "main.js.map": "/website/static/js/main.b4bf3c3b.chunk.js.map",
+    "main.css": "/website/static/css/main.24914b01.chunk.css",
+    "main.js": "/website/static/js/main.3e0b5a9c.chunk.js",
+    "main.js.map": "/website/static/js/main.3e0b5a9c.chunk.js.map",
     "runtime-main.js": "/website/static/js/runtime-main.14dbd8b4.js",
     "runtime-main.js.map": "/website/static/js/runtime-main.14dbd8b4.js.map",
-    "static/js/2.74e8220b.chunk.js": "/website/static/js/2.74e8220b.chunk.js",
-    "static/js/2.74e8220b.chunk.js.map": "/website/static/js/2.74e8220b.chunk.js.map",
+    "static/js/2.196ec678.chunk.js": "/website/static/js/2.196ec678.chunk.js",
+    "static/js/2.196ec678.chunk.js.map": "/website/static/js/2.196ec678.chunk.js.map",
     "index.html": "/website/index.html",
-    "precache-manifest.2d76017a358c3a62d3b59f06e507741e.js": "/website/precache-manifest.2d76017a358c3a62d3b59f06e507741e.js",
+    "precache-manifest.dcd255bf8de9b1d63f55be3a5c28a740.js": "/website/precache-manifest.dcd255bf8de9b1d63f55be3a5c28a740.js",
     "service-worker.js": "/website/service-worker.js",
-    "static/css/main.4b972597.chunk.css.map": "/website/static/css/main.4b972597.chunk.css.map",
+    "static/css/main.24914b01.chunk.css.map": "/website/static/css/main.24914b01.chunk.css.map",
     "static/media/alibaba.svg": "/website/static/media/alibaba.9890ab75.svg",
     "static/media/angular.svg": "/website/static/media/angular.5c69e565.svg",
     "static/media/arrow_back.svg": "/website/static/media/arrow_back.26b83d4e.svg",
@@ -21,7 +21,6 @@
     "static/media/email_light.svg": "/website/static/media/email_light.c97ecce2.svg",
     "static/media/flutter.svg": "/website/static/media/flutter.faf8f499.svg",
     "static/media/gcp.svg": "/website/static/media/gcp.a711d8f7.svg",
-    "static/media/image.png": "/website/static/media/image.07a19746.png",
     "static/media/logo.svg": "/website/static/media/logo.60cc350f.svg",
     "static/media/mongoDb.svg": "/website/static/media/mongoDb.554c7d4b.svg",
     "static/media/mysql.svg": "/website/static/media/mysql.f80a91ba.svg",
@@ -40,8 +39,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.14dbd8b4.js",
-    "static/js/2.74e8220b.chunk.js",
-    "static/css/main.4b972597.chunk.css",
-    "static/js/main.b4bf3c3b.chunk.js"
+    "static/js/2.196ec678.chunk.js",
+    "static/css/main.24914b01.chunk.css",
+    "static/js/main.3e0b5a9c.chunk.js"
   ]
 }
