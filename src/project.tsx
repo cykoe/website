@@ -29,7 +29,6 @@ const imageDict: any = {
   'aws': aws,
 };
 
-
 export interface IProject {
   index: number;
   name: string;
@@ -41,58 +40,79 @@ export interface IProject {
   platform: string[];
   category: string[];
   detail: string;
+  pop?: boolean;
+  onClick?: any;
+  closeModal?: any;
+  next?: any;
+  previous?: any;
 }
 
-export default function Project(props: IProject) {
-  return props.reverse ?
-      (
-          <div className='row list-section__item'>
-            <div className='col-2 col-xl-3'/>
-            <div className='col-9 col-xl-7 project'>
-              <div className='col-4 col-l-7 project__images'>
-                <ul>
-                  <li><img src={imageUrl + props.images[0]} alt=""/></li>
-                  <li><img src={imageUrl + props.images[1]} alt=""/></li>
-                </ul>
-              </div>
-              <div className='col-8 col-l-5 project__title'>
-                <div className='item-name-section'>
-                  <div className='font-2--0em'><p>{props.index + 1}.</p></div>
-                  <div>
-                    <p className='font-2--0em'>{props.name}</p>
-                    <p className='font-0--7em'>{props.description}</p>
-                    {props.technology.map((t: string)=> <img src={imageDict[t]} alt={t}/>)}
+export default class Project extends React.Component<IProject, any> {
+  constructor(props: IProject) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+
+  }
+
+  handleClick() {
+    console.log('clicked!');
+    this.props.onClick();
+  }
+
+  render() {
+    const props = this.props;
+    return props.reverse ?
+        (
+            <div className='row list-section__item' onClick={this.handleClick}>
+              <div className='col-2 col-xl-3'/>
+              <div className='col-9 col-xl-7 project'>
+                <div className='col-4 col-l-7 project__images'>
+                  <ul>
+                    <li><img src={imageUrl + props.images[0]} alt=""/></li>
+                    <li><img src={imageUrl + props.images[1]} alt=""/></li>
+                  </ul>
+                </div>
+                <div className='col-8 col-l-5 project__title'>
+                  <div className='item-name-section'>
+                    <div className='font-2--0em'><p>{props.index + 1}.</p></div>
+                    <div>
+                      <p className='font-2--0em'>{props.name}</p>
+                      <p className='font-0--7em'>{props.description}</p>
+                      {props.technology.map(
+                          (t: string) => <img src={imageDict[t]} alt={t}/>)}
+                    </div>
                   </div>
                 </div>
               </div>
+              <div className='col-1 col-xl-2'/>
             </div>
-            <div className='col-1 col-xl-2'/>
-          </div>
-      )
-      :
-      (
-          <div className='row list-section__item'>
-            <div className='col-1 col-xl-2'/>
-            <div className='col-9 col-xl-7 project--reverse'>
-              <div className='col-1 col-l-6 project__buffer'/>
-              <div className='col-8 col-l-5 project__title'>
-                <div className='item-name-section'>
-                  <div className='font-2--0em'>{props.index + 1}.</div>
-                  <div>
-                    <p className='font-2--0em'>{props.name}</p>
-                    <p className='font-0--7em'>{props.description}</p>
-                    {props.technology.map((t: string)=> <img src={imageDict[t]} alt={t}/>)}
+        )
+        :
+        (
+            <div className='row list-section__item' onClick={this.handleClick}>
+              <div className='col-1 col-xl-2'/>
+              <div className='col-9 col-xl-7 project--reverse'>
+                <div className='col-1 col-l-6 project__buffer'/>
+                <div className='col-8 col-l-5 project__title'>
+                  <div className='item-name-section'>
+                    <div className='font-2--0em'>{props.index + 1}.</div>
+                    <div>
+                      <p className='font-2--0em'>{props.name}</p>
+                      <p className='font-0--7em'>{props.description}</p>
+                      {props.technology.map(
+                          (t: string) => <img src={imageDict[t]} alt={t}/>)}
+                    </div>
                   </div>
                 </div>
+                <div className='col-4 col-l-7 project__images'>
+                  <ul>
+                    <li><img src={imageUrl + props.images[0]} alt=""/></li>
+                    <li><img src={imageUrl + props.images[1]} alt=""/></li>
+                  </ul>
+                </div>
               </div>
-              <div className='col-4 col-l-7 project__images'>
-                <ul>
-                  <li><img src={imageUrl + props.images[0]} alt=""/></li>
-                  <li><img src={imageUrl + props.images[1]} alt=""/></li>
-                </ul>
-              </div>
+              <div className='col-2 col-xl-3'/>
             </div>
-            <div className='col-2 col-xl-3'/>
-          </div>
-      );
+        );
+  }
 }

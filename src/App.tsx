@@ -20,17 +20,46 @@ const url = 'https://raw.githubusercontent.com/sircharlie/diary/master/projects.
 class App extends React.Component {
   state: any = {
     items: [],
+    clicks: [],
   };
 
   async componentDidMount() {
     const response = await axios.get(url);
-    this.setState({items: response.data});
+    this.setState({
+      items: response.data,
+      clicks: new Array(response.data.length).fill(false),
+    });
+  }
+
+  handleClick(index: number) {
+    const newArray = [...this.state.clicks];
+    newArray[index] = true;
+    this.setState({clicks: newArray});
+  }
+
+  handleCloseModal(index: number) {
+    const newArray = [...this.state.clicks];
+    newArray[index] = false;
+    this.setState({clicks: newArray});
+  }
+
+  handleNext(index: number) {
+    const newArray = [...this.state.clicks];
+    newArray[index] = false;
+    newArray[(index+1) % newArray.length] = true;
+    this.setState({clicks: newArray});
+  }
+
+  handlePrevious(index: number) {
+    const newArray = [...this.state.clicks];
+    newArray[index] = false;
+    newArray[(index-1) % newArray.length] = true;
+    this.setState({clicks: newArray});
   }
 
   render() {
     return (
         <div className="App">
-          {this.state.items.map((item: IProject, index: number) => <Detail key={index} index={index} name={item.name} description={''} images={[]} reverse={true} technology={[]} about={item.about} platform={item.platform} category={item.category} detail={item.detail}/>)}
           <div className='main-section'>
             <div className='row'>
               <div className='col-1 col-xl-2'/>
@@ -82,7 +111,28 @@ class App extends React.Component {
                     description={item.description}
                     images={item.images}
                     technology={item.technology}
-                    reverse={index % 2 !== 0} about={''} platform={[]} category={[]} detail={''}/>)}
+                    onClick={this.handleClick.bind(this, index)}
+                    reverse={index % 2 !== 0} about={''} platform={[]}
+                    category={[]} detail={''}/>)}
+            {this.state.items.map(
+                (item: IProject, index: number) => <Detail key={index}
+                                                           index={index}
+                                                           name={item.name}
+                                                           description={''}
+                                                           images={[]}
+                                                           reverse={index %
+                                                           2 !== 0}
+                                                           technology={[]}
+                                                           about={item.about}
+                                                           platform={item.platform}
+                                                           category={item.category}
+                                                           pop={this.state.clicks[index]}
+                                                           closeModal={this.handleCloseModal.bind(
+                                                               this, index)}
+                                                           next={this.handleNext.bind(this, index)}
+                                                           previous={this.handlePrevious.bind(this, index)}
+                                                           detail={item.detail}/>)}
+
           </div>
 
           <div className='footer-section text-center'>
