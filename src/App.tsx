@@ -64,8 +64,8 @@ class App extends React.Component {
         <div className="App">
           <div className='main-section'>
             <div className='row'>
-              <div className='col-1 col-xl-2'/>
-              <div className="col-1">
+              <div className='col-1 col-s-1 col-xl-2'/>
+              <div className="col-1 col-s-1">
                 <img src={Logo} alt="logo" className='CLogo'/>
               </div>
             </div>
@@ -73,7 +73,7 @@ class App extends React.Component {
               {/*TODO: restore this*/}
               <div className='col-1 col-xl-2 col-xs-1 introduction__buffer'/>
               <div
-                  className='col-2 col-l-3 col-xl-1 col-xs-2 vertical-align--bottom introduction__logos'>
+                  className='col-2 col-xl-1 col-l-3 col-s-1 col-xs-1 vertical-align--bottom introduction__logos'>
                 <ul>
                   <li><img src={weibo_dark} alt="weibo"/></li>
                   <li><img src={twitter_dark} alt="twitter"/></li>
@@ -82,12 +82,12 @@ class App extends React.Component {
                 </ul>
               </div>
               <div
-                  className='col-3 col-l-2 col-xl-3 col-xs-6 vertical-align--center text-center introduction__titles'>
+                  className='col-3 col-xl-3 col-l-2 col-s-3 col-xs-6 vertical-align--center text-center introduction__titles'>
                 <p className='font-2--0em'>Charlie Yang</p>
                 <p className='font-1--3em'>Software Engineer</p>
               </div>
               <div
-                  className='col-5 col-xl-3 col-xs-6 vertical-align--center introduction__logo'>
+                  className='col-5 col-xl-3 col-s-6 col-xs-6 vertical-align--center introduction__logo'>
                 <img src={MainLogo} alt=""/>
               </div>
               <div
@@ -100,7 +100,7 @@ class App extends React.Component {
                 </ul>
               </div>
               <div
-                  className='col-2 col-l-1 col-xs-2 vertical-align--bottom text-center introduction__scroll'>
+                  className='col-1 col-s-1 col-xs-2 vertical-align--bottom text-center introduction__scroll'>
                 <span className='scroll-down-text'><p className='font-1--0em'>SCROLL DOWN</p></span>
               </div>
             </div>
@@ -121,7 +121,7 @@ class App extends React.Component {
                                                            index={index}
                                                            name={item.name}
                                                            description={''}
-                                                           images={[]}
+                                                           images={item.images}
                                                            reverse={index %
                                                            2 !== 0}
                                                            technology={[]}

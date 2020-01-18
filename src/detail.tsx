@@ -2,7 +2,6 @@ import React from 'react';
 import axios from 'axios';
 
 import './detail.scss';
-import image from './assets/image.png';
 import arrow_back from './assets/arrow_back.svg';
 import arrow_forward from './assets/arrow_forward.svg';
 import view from './assets/view.svg';
@@ -11,6 +10,7 @@ import Popup from 'reactjs-popup';
 
 const ReactMarkdown = require('react-markdown');
 const detailUrl = 'https://raw.githubusercontent.com/sircharlie/diary/master/';
+const imageUrl = 'https://raw.githubusercontent.com/sircharlie/diary/master/';
 
 export default class Detail extends React.Component<IProject, any> {
   constructor(props: IProject) {
@@ -42,10 +42,11 @@ export default class Detail extends React.Component<IProject, any> {
 
   render() {
     const props = this.props;
+    console.log(props);
     return (
         <Popup
             modal
-            contentStyle={{width: '80%', height: '80%', overflowY: 'scroll'}}
+            contentStyle={{width: '80%', height: '80%', overflowY: 'scroll', background: '#F0ECE2'}}
             open={this.props.pop}
             onClose={this.closeModal}
             lockScroll={true}
@@ -92,11 +93,13 @@ export default class Detail extends React.Component<IProject, any> {
                     <div className="row project-source">
                       <div className="col-12 font-0--8em">
                         <span><a
-                            href={props.productUrl} target="_blank" rel="noopener noreferrer">see the product</a></span><img
+                            href={props.productUrl} target="_blank"
+                            rel="noopener noreferrer">see the product</a></span><img
                           src={view} alt="view"/></div>
                       <div className="col-12 font-0--8em">
                         <span><a
-                            href={props.codeUrl} target="_blank" rel="noopener noreferrer">see the source code</a></span><img
+                            href={props.codeUrl} target="_blank"
+                            rel="noopener noreferrer">see the source code</a></span><img
                           src={view} alt="view"/></div>
                     </div>
                     <div className="row project-options">
@@ -112,8 +115,10 @@ export default class Detail extends React.Component<IProject, any> {
                 </div>
                 <div className="col-6 image-gallery">
                   <ul>
-                    <li><img src={image} alt="image1"/></li>
-                    <li><img src={image} alt="image1"/></li>
+                    {props.images.map(
+                        (image: string, index: number) => <li key={index}><img src={imageUrl+image} alt="image1"/>
+                        </li>,
+                    )}
                   </ul>
                 </div>
               </div>

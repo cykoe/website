@@ -65,15 +65,15 @@ export default class Project extends React.Component<IProject, any> {
     return props.reverse ?
         (
             <div className='row list-section__item' onClick={this.handleClick}>
-              <div className='col-2 col-xl-3'/>
-              <div className='col-9 col-xl-7 project'>
-                <div className='col-4 col-l-7 project__images'>
+              <div className='col-1 col-s-1 col-xs-1 col-xl-3'/>
+              <div className='col-10 col-s-10 col-xs-10 col-xl-7 project'>
+                <div className='col-4 col-s-4 col-xs-4 col-l-7 project__images'>
                   <ul>
                     <li><img src={imageUrl + props.images[0]} alt=""/></li>
                     <li><img src={imageUrl + props.images[1]} alt=""/></li>
                   </ul>
                 </div>
-                <div className='col-8 col-l-5 project__title'>
+                <div className='col-8 col-s-8 col-xs-8 col-l-5 project__title'>
                   <div className='item-name-section'>
                     <div className='font-2--0em'><p>{props.index + 1}.</p></div>
                     <div>
@@ -85,16 +85,16 @@ export default class Project extends React.Component<IProject, any> {
                   </div>
                 </div>
               </div>
-              <div className='col-1 col-xl-2'/>
+              <div className='col-1 col-s-1 col-xs-1 col-xl-2'/>
             </div>
         )
         :
         (
             <div className='row list-section__item' onClick={this.handleClick}>
-              <div className='col-1 col-xl-2'/>
-              <div className='col-9 col-xl-7 project--reverse'>
-                <div className='col-1 col-l-6 project__buffer'/>
-                <div className='col-8 col-l-5 project__title'>
+              <div className='col-1 col-s-1 col-xs-1 col-xl-2'/>
+              <div className='col-10 col-s-10 col-xs-10 col-xl-7 project--reverse'>
+                <div className='col-1 col-s-1 col-xs-1 col-l-6 project__buffer'/>
+                <div className='col-8 col-s-8 col-xs-8 col-l-5 project__title'>
                   <div className='item-name-section'>
                     <div className='font-2--0em'>{props.index + 1}.</div>
                     <div>
@@ -105,14 +105,14 @@ export default class Project extends React.Component<IProject, any> {
                     </div>
                   </div>
                 </div>
-                <div className='col-4 col-l-7 project__images'>
+                <div className='col-4 col-s-4 col-xs-4 col-l-7 project__images'>
                   <ul>
                     <li><img src={imageUrl + props.images[0]} alt=""/></li>
                     <li><img src={imageUrl + props.images[1]} alt=""/></li>
                   </ul>
                 </div>
               </div>
-              <div className='col-2 col-xl-3'/>
+              <div className='col-2 col-s-1 col-xs-1 col-xl-3'/>
             </div>
         );
   }
