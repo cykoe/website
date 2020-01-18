@@ -5,6 +5,14 @@
 }
 
 /* Extra small devices (phones) */
+@mixin grid-system($size) {
+  @for $i from 1 through 12 {
+  .col-#{$size}-#{$i} {
+    width: 100% / (13- $i);
+  }
+}
+}
+
 @media only screen and (min-width: 320px) {
   .col-xs-1 {
     width: 8.33%;

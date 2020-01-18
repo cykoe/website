@@ -42,7 +42,6 @@ export default class Detail extends React.Component<IProject, any> {
 
   render() {
     const props = this.props;
-    console.log(props);
     return (
         <Popup
             modal
