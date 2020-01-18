@@ -36,67 +36,88 @@ export default class Detail extends React.Component<IProject, any> {
   }
 
   async componentDidMount() {
-    const response = await axios.get(detailUrl + this.props.name + '/index.md');
-    this.setState({detail: response.data});
+    // const response = await axios.get(detailUrl + this.props.name + '/index.md');
+    // this.setState({detail: response.data});
   }
 
   render() {
     const props = this.props;
     return (
         <Popup
+            modal
+            contentStyle={{width: '80%', height: '80%', overflowY: 'scroll'}}
             open={this.props.pop}
             onClose={this.closeModal}
+            lockScroll={true}
             closeOnDocumentClick>
-          <div className="row detail">
-            <div className="col-6">
-              <div className="row project-about">
-                <div className="col-12 font-1--3em project-about--title">About
-                  the
-                  project
-                </div>
-                <div className="col-12 font-0--8em project-about--subtitle">
-                  <p>{props.about}</p></div>
-              </div>
-              <div className="row">
+          {close =>
+              <div className="row detail">
+                <a className="close" onClick={close}>
+                  &times;
+                </a>
                 <div className="col-6">
-                  <div className="font-1--3em">Platform</div>
-                  <div className="font-0--8em">{props.platform}</div>
+                  <div className="row project-about">
+                    <div
+                        className="col-12">
+                      <div className='font-1--3em'>About {props.name}
+                      </div>
+                      <div className="font-0--8em">
+                        {props.about}</div>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-6">
+                      <div className="font-1--3em">Platform</div>
+                      <div className="font-0--7em">{props.platform}</div>
+                    </div>
+                    <div className="col-6">
+                      <div className="font-1--3em">Category</div>
+                      <div className="font-0--8em">{props.category.map(
+                          (c: string) => <span>{c} </span>)}</div>
+                    </div>
+                  </div>
+                  {/* TODO: make sure to uncomment */}
+                  {/*<div className="row project-about">*/}
+                  {/*  <div*/}
+                  {/*      className="col-12">*/}
+                  {/*    <div className="font-1--3em">Detail</div>*/}
+                  {/*    <div*/}
+                  {/*        className="font-0--7em">*/}
+                  {/*      <ReactMarkdown source={this.state.detail}/>*/}
+                  {/*    </div>*/}
+                  {/*  </div>*/}
+
+                  {/*</div>*/}
+                  <div className="row options">
+                    <div className="row project-source">
+                      <div className="col-12 font-0--8em">
+                        <span><a
+                            href={props.productUrl} target="_blank" rel="noopener noreferrer">see the product</a></span><img
+                          src={view} alt="view"/></div>
+                      <div className="col-12 font-0--8em">
+                        <span><a
+                            href={props.codeUrl} target="_blank" rel="noopener noreferrer">see the source code</a></span><img
+                          src={view} alt="view"/></div>
+                    </div>
+                    <div className="row project-options">
+                      <div className="col-12 font-0--8em"
+                           onClick={this.previous}>
+                        <span>previous project</span><img
+                          src={arrow_back} alt="back"/></div>
+                      <div className="col-12 font-0--8em" onClick={this.next}>
+                        <span>next project</span><img
+                          src={arrow_forward} alt="forward"/></div>
+                    </div>
+                  </div>
                 </div>
-                <div className="col-6">
-                  <div className="font-1--3em">Category</div>
-                  <div className="font-0--8em">{props.category.map(
-                      (c: string) => <span>{c} </span>)}</div>
+                <div className="col-6 image-gallery">
+                  <ul>
+                    <li><img src={image} alt="image1"/></li>
+                    <li><img src={image} alt="image1"/></li>
+                  </ul>
                 </div>
               </div>
-              <div className="row project-about">
-                <div className="col-12 font-1--3em project-about--title">Detail
-                </div>
-                <div className="col-12 font-0--8em project-about--subtitle">
-                  <ReactMarkdown source={this.state.detail}/>
-                </div>
-              </div>
-              <div className="row project-source">
-                <div className="col-12 font-0--8em"><span>See the product</span><img
-                    src={view} alt="view"/></div>
-                <div className="col-12 font-0--8em"><span>See the source code</span><img
-                    src={view} alt="view"/></div>
-              </div>
-              <div className="row project-options">
-                <div className="col-12 font-0--8em" onClick={this.previous}><span>Previous project</span><img
-                    src={arrow_back} alt="back"/></div>
-                <div className="col-12 font-0--8em" onClick={this.next}><span>Next project</span><img
-                    src={arrow_forward} alt="forward"/></div>
-              </div>
-            </div>
-            <div className="col-6 image-gallery">
-              <ul>
-                <li><img src={image} alt="image1"/></li>
-                <li><img src={image} alt="image1"/></li>
-                <li><img src={image} alt="image1"/></li>
-                <li><img src={image} alt="image1"/></li>
-              </ul>
-            </div>
-          </div>
+          }
         </Popup>
     );
   }

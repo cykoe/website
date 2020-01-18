@@ -45,6 +45,8 @@ export interface IProject {
   closeModal?: any;
   next?: any;
   previous?: any;
+  productUrl?: string;
+  codeUrl?: string;
 }
 
 export default class Project extends React.Component<IProject, any> {
@@ -55,7 +57,6 @@ export default class Project extends React.Component<IProject, any> {
   }
 
   handleClick() {
-    console.log('clicked!');
     this.props.onClick();
   }
 

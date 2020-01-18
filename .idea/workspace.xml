@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18d23ae3-e136-4775-830f-f39dbe4101a4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/button.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Apps.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Apps.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/detail.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/detail.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/detail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/detail.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/project.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/project.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/project.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +43,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -54,6 +58,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\charlie\Documents\blog\website\public" />
       <recent name="C:\Users\charlie\Documents\blog\website\src\assets" />
       <recent name="C:\Users\charlie\Documents\blog\website\assets" />
       <recent name="C:\Users\charlie\Documents\blog\website\src" />
@@ -108,7 +113,8 @@
       <workItem from="1579110009930" duration="1379000" />
       <workItem from="1579118412433" duration="5712000" />
       <workItem from="1579181744690" duration="22602000" />
-      <workItem from="1579218393663" duration="31396000" />
+      <workItem from="1579218393663" duration="40855000" />
+      <workItem from="1579324740198" duration="1676000" />
     </task>
     <servers />
   </component>
@@ -124,10 +130,11 @@
       <screen x="0" y="0" width="1500" height="970" />
     </state>
     <state x="431" y="214" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1500.970@0.0.1500.970" timestamp="1578577093633" />
-    <state x="539" y="260" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579203681212">
-      <screen x="0" y="0" width="1500" height="1000" />
+    <state x="539" y="252" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579312763006">
+      <screen x="0" y="0" width="1500" height="970" />
     </state>
     <state x="539" y="260" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1500.1000/532.-1080.1920.1080@0.0.1500.1000" timestamp="1579203681212" />
+    <state x="539" y="252" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1500.970@0.0.1500.970" timestamp="1579312763006" />
     <state x="690" y="273" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1579186254692" />
     <state x="1115" y="-1049" key="CommitChangelistDialog2" timestamp="1579038178481">
       <screen x="532" y="-1080" width="1920" height="1050" />
@@ -149,16 +156,17 @@
     </state>
     <state x="993" y="-912" key="SettingsEditor/0.0.1500.970/532.-1080.1920.1050@532.-1080.1920.1050" timestamp="1579038886376" />
     <state x="461" y="168" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1579181825334" />
-    <state x="599" y="405" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579218050633">
+    <state x="599" y="405" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579322273552">
       <screen x="0" y="0" width="1500" height="970" />
     </state>
     <state x="599" y="405" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1500.970/532.-1080.1920.1050@0.0.1500.970" timestamp="1579218050633" />
     <state x="1299" y="-642" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1500.970/532.-1080.1920.1050@532.-1080.1920.1050" timestamp="1579189326279" />
+    <state x="599" y="405" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1500.970@0.0.1500.970" timestamp="1579322273552" />
     <state x="767" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1579181686624" />
-    <state x="808" y="200" width="633" height="568" key="find.popup" timestamp="1579303333555">
+    <state x="808" y="200" width="633" height="568" key="find.popup" timestamp="1579318101371">
       <screen x="0" y="0" width="1500" height="970" />
     </state>
-    <state x="808" y="200" width="633" height="568" key="find.popup/0.0.1500.970@0.0.1500.970" timestamp="1579303333555" />
+    <state x="808" y="200" width="633" height="568" key="find.popup/0.0.1500.970@0.0.1500.970" timestamp="1579318101371" />
     <state width="600" height="440" key="javadoc.popup" timestamp="1579030851447">
       <screen x="532" y="-1080" width="1920" height="1050" />
     </state>
@@ -167,20 +175,20 @@
       <screen x="0" y="0" width="1500" height="970" />
     </state>
     <state x="768" y="218" width="700" height="530" key="recent.locations.popup/0.0.1500.970@0.0.1500.970" timestamp="1578388648646" />
-    <state x="486" y="228" width="525" height="626" key="run.anything.popup" timestamp="1579306496481">
+    <state x="487" y="229" width="525" height="626" key="run.anything.popup" timestamp="1579326232765">
       <screen x="0" y="0" width="1500" height="970" />
     </state>
     <state x="1148" y="-837" width="672" height="677" key="run.anything.popup/0.0.1500.970/532.-1080.1920.1050@532.-1080.1920.1050" timestamp="1579021880440" />
-    <state x="486" y="228" width="525" height="626" key="run.anything.popup/0.0.1500.970@0.0.1500.970" timestamp="1579306496481" />
+    <state x="487" y="229" width="525" height="626" key="run.anything.popup/0.0.1500.970@0.0.1500.970" timestamp="1579326232765" />
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1579181914836" />
-    <state x="558" y="279" width="672" height="678" key="search.everywhere.popup" timestamp="1579308980303">
+    <state x="573" y="293" width="672" height="678" key="search.everywhere.popup" timestamp="1579325655383">
       <screen x="0" y="0" width="1500" height="970" />
     </state>
     <state x="518" y="253" width="673" height="702" key="search.everywhere.popup/0.0.1500.1000/532.-1080.1920.1080@0.0.1500.1000" timestamp="1579207505697" />
     <state x="1189" y="-812" width="861" height="758" key="search.everywhere.popup/0.0.1500.1000/532.-1080.1920.1080@532.-1080.1920.1080" timestamp="1579197110035" />
     <state x="520" y="247" width="673" height="681" key="search.everywhere.popup/0.0.1500.970/532.-1080.1920.1050@0.0.1500.970" timestamp="1579219072569" />
     <state x="1189" y="-819" width="861" height="736" key="search.everywhere.popup/0.0.1500.970/532.-1080.1920.1050@532.-1080.1920.1050" timestamp="1579039181789" />
-    <state x="558" y="279" width="672" height="678" key="search.everywhere.popup/0.0.1500.970@0.0.1500.970" timestamp="1579308980303" />
+    <state x="573" y="293" width="672" height="678" key="search.everywhere.popup/0.0.1500.970@0.0.1500.970" timestamp="1579325655383" />
     <state x="657" y="261" width="861" height="736" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1579187508160" />
     <state x="657" y="268" width="861" height="756" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1578958981609" />
     <state x="876" y="349" width="1147" height="985" key="search.everywhere.popup/0.0.2560.1409@0.0.2560.1409" timestamp="1578781150904" />

@@ -47,13 +47,15 @@ class App extends React.Component {
     const newArray = [...this.state.clicks];
     newArray[index] = false;
     newArray[(index+1) % newArray.length] = true;
+
     this.setState({clicks: newArray});
   }
 
   handlePrevious(index: number) {
     const newArray = [...this.state.clicks];
     newArray[index] = false;
-    newArray[(index-1) % newArray.length] = true;
+    const result = index - 1 < 0 ? newArray.length-1 : index-1;
+    newArray[result] = true;
     this.setState({clicks: newArray});
   }
 
@@ -98,7 +100,7 @@ class App extends React.Component {
                 </ul>
               </div>
               <div
-                  className='col-2 col-xs-2 vertical-align--bottom text-center introduction__scroll'>
+                  className='col-2 col-l-1 col-xs-2 vertical-align--bottom text-center introduction__scroll'>
                 <span className='scroll-down-text'><p className='font-1--0em'>SCROLL DOWN</p></span>
               </div>
             </div>
@@ -126,6 +128,8 @@ class App extends React.Component {
                                                            about={item.about}
                                                            platform={item.platform}
                                                            category={item.category}
+                                                           codeUrl={item.codeUrl}
+                                                           productUrl={item.productUrl}
                                                            pop={this.state.clicks[index]}
                                                            closeModal={this.handleCloseModal.bind(
                                                                this, index)}
