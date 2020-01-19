@@ -1,10 +1,6 @@
 @import "variables";
 
 .detail {
-  .row {
-    padding: 0% 0;
-  }
-
   .close {
     cursor: pointer;
     position: absolute;
@@ -17,6 +13,28 @@
     background: #ffffff;
     border-radius: 18px;
     border: 1px solid #cfcece;
+  }
+}
+
+.gallery {
+  img {
+    max-width: 100%;
+    border-radius: 1.5em;
+    width: 100%;
+  }
+
+  li {
+    padding: 3% 0;
+  }
+}
+
+.project-source {
+  & div:hover {
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: underline;
   }
 }
 
@@ -34,95 +52,22 @@
     transition: all 0.2s ease-in;
   }
 
-}
+  & div:hover {
+    cursor: pointer;
 
-.project-source {
-  div span {
-    padding: 2%;
-  }
+    span {
+      color: $base-color;
+      border-radius: 10px;
+      background-color: $primary-color;
+      transition: all 0.5s ease-out;
+    }
 
-  div img {
-    position: relative;
-    top: 8px;
-  }
-
-  span {
-    transition: all 0.2s ease-in;
-  }
-
-}
-
-.project-options div:hover {
-  cursor: pointer;
-
-  span {
-    color: $base-color;
-    border-radius: 10px;
-    background-color: $primary-color;
-    transition: all 0.5s ease-out;
-  }
-
-  span + img {
-    animation: scroll-left;
-    animation-duration: 0.5s;
-    animation-direction: alternate;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
-  }
-}
-
-.project-source div:hover {
-  cursor: pointer;
-
-  span {
-    border-radius: 10px;
-    transition: all 0.5s ease-out;
-  }
-
-  span + img {
-    animation: scroll-left;
-    animation-duration: 0.5s;
-    animation-direction: alternate;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
-  }
-}
-
-.project-source {
-  div span {
-    padding-right: 2%;
-  }
-
-  div img {
-    position: relative;
-    top: -7px;
-  }
-}
-
-.image-gallery {
-  img {
-    max-width: 100%;
-    border-radius: 30px;
-    width: 100%;
-  }
-
-  li {
-    padding: 3% 0;
-  }
-}
-
-.options {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-}
-
-@keyframes scroll-left {
-  from {
-    transform: translateX(0%);
-  }
-
-  to {
-    transform: translateX(50%);
+    span + img {
+      animation: scroll-left;
+      animation-duration: 0.5s;
+      animation-direction: alternate;
+      animation-timing-function: ease-out;
+      animation-iteration-count: infinite;
+    }
   }
 }

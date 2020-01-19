@@ -22,16 +22,13 @@ ul {
 }
 
 .App {
-  background-color: $base-color;
-  //font-family: 'Montserrat', sans-serif;
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-size: 1.5em;
   color: $primary-color;
-  padding: 0 12px 0 8px;
+  background-color: $base-color;
+  font-family: 'Montserrat Alternates', sans-serif;
   overflow: hidden;
 
   .main-section {
-    padding: 2% 0 10% 0;
+    padding: 3% 0;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -39,49 +36,44 @@ ul {
 
 
   .list-section {
-    padding: 3% 0;
+    padding: 3%;
   }
-}
 
-.footer-section {
-  background-color: $primary-color;
-  margin: 0 -12px 0 -8px;
+  .footer-section {
+    background-color: $primary-color;
+    margin: 0 -12px 0 -8px;
 
-  ul li {
-    display: inline;
-    padding: 0 20px;
+    ul li {
+      display: inline;
+      padding: 0 20px;
+    }
   }
+
 }
 
 .text-center {
   text-align: center;
 }
 
-.vertical-align--center {
+@mixin vertical-align($position) {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-.vertical-align--bottom {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
+  @if $position == top {
+    justify-content: flex-start;
+  } @else if $position == center {
+    justify-content: center;
+  } @else if $position == bottom {
+    justify-content: flex-end;
+  }
 }
 
 .introduction {
-  max-height: 100%;
   height: 100%;
 
-  [class*="col-"] {
-    height: 100%;
-  }
-
-  .introduction__logos {
-    display: flex !important;
+  &__logos {
+    @include vertical-align(bottom);
+    display: none;
 
     ul {
       margin: 0;
@@ -92,16 +84,22 @@ ul {
     }
   }
 
-  .introduction__logos--small {
-    display: none;
+  &__logos--small {
+    @include vertical-align(bottom);
   }
 
   .introduction__titles {
     padding-right: 0;
 
     p {
+      position: relative;
+      width: 150%;
+      text-align: left;
       margin: 0;
+      word-break: normal;
     }
+
+    @include vertical-align(center);
   }
 
   .introduction__logo {
@@ -109,8 +107,9 @@ ul {
 
     img {
       width: 380px;
-      max-width: 100%;
     }
+
+    @include vertical-align(top);
   }
 
   .introduction__scroll {
@@ -123,127 +122,8 @@ ul {
         text-orientation: mixed;
       }
     }
-  }
-}
 
-@media only screen and (max-width: 450px) {
-  .project__view, .project__buffer {
-    display: none;
-  }
-
-  .project {
-    background-image: linear-gradient(to right, rgba(240, 236, 226, 0.0), rgba(1, 1, 1, 0.5));
-  }
-
-  .project--reverse {
-    background-image: linear-gradient(to right, rgba(240, 236, 226, 0.0), rgba(1, 1, 1, 0.5));
-  }
-
-  .introduction {
-    flex-grow: 1;
-    max-height: 100%;
-    justify-content: flex-start;
-
-    [class*="col-"] {
-      height: 100%;
-    }
-
-    .introduction__buffer {
-      display: none;
-    }
-
-    .introduction__logos {
-      display: none !important;
-
-      ul {
-        margin: 0;
-
-        li {
-          padding: 5% 0;
-        }
-      }
-    }
-
-    .introduction__logos--small {
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: center;
-      padding: 0;
-      padding-left: 10px;
-
-      ul {
-        margin: 0;
-
-        li {
-          padding: 5% 0;
-        }
-      }
-    }
-
-    .introduction__titles {
-      height: 380px;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: center;
-      padding: 0;
-
-      p {
-        margin: 0;
-      }
-
-
-    }
-
-
-    .introduction__logo {
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: flex-start;
-      padding: 0;
-
-      img {
-        width: 380px;
-        max-width: none;
-      }
-    }
-
-    .introduction__scroll {
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: flex-start;
-      padding: 0;
-      position: relative;
-      top: 10%;
-
-      span {
-        p {
-          writing-mode: vertical-rl;
-          text-orientation: mixed;
-          padding-bottom: 5%;
-        }
-
-        //position: relative;
-        //bottom: 20%;
-        transform: none;
-      }
-    }
-  }
-
-  .project__title {
-    .item-name-section > div:first-child {
-      padding-right: 10px;
-    }
-
-    .font-2--0em {
-      font-size: 1.6em;
-    }
+    @include vertical-align(bottom)
   }
 }
 
@@ -254,7 +134,6 @@ ul {
   -ms-transition: all 1.5s ease-in;
   transition: all 1.5s ease-in;
 }
-
 
 .CLogo:hover {
   -webkit-transition: all 1.5s ease-out;

@@ -1,0 +1,36 @@
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  width: 100%;
+}
+
+@for $i from 1 through 4 {
+  .col-#{$i} {
+    width: 100% / 4 * $i;
+  }
+
+  .offset-#{$i} {
+    margin-left: 100% / 4 * $i;
+  }
+}
+
+$sizes: ('s': 600px, 'm': 768px, 'l': 992px, 'xl':1200px);
+@each $name, $size in $sizes {
+  @media only screen and (min-width: $size) {
+    @for $i from 1 through 12 {
+      .col-#{$name}-#{$i} {
+        width: 100% / 12 * $i;
+      }
+
+      .offset-#{$name}-#{$i} {
+        margin-left: 100% / 12 * $i;
+      }
+    }
+  }
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
