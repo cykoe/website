@@ -63,15 +63,16 @@ export default class Project extends React.Component<IProject, any> {
     const props = this.props;
     return (
         <div className='row list-section__item' onClick={this.handleClick}>
-          <div className='col-4 col-s-10 col-xs-10 col-xl-7 project-odd'>
+          <div
+              className='col-4 col-s-10 offset-s-1 col-xs-10 col-xl-7 offset-xl-2 project-odd'>
             <div
-                className='col-4 col-s-8 col-xs-8 col-l-5 project-odd__title'>
+                className='col-4 col-s-8 col-m-5 col-l-5 offset-m-1 offset-l-1 offset-xl-1 col-xl-5 project-odd__title'>
               <Title index={props.index + 1} name={props.name}
                      description={props.description}
                      technology={props.technology}/>
             </div>
             <div
-                className='col-4 col-s-4 col-xs-4 col-l-7 project-odd__images'>
+                className='col-4 col-s-4 col-m-6 col-l-6 col-l-6 project-odd__images'>
               <Image images={props.images}/>
             </div>
           </div>
@@ -83,12 +84,14 @@ export default class Project extends React.Component<IProject, any> {
     const props = this.props;
     return (
         <div className='row list-section__item' onClick={this.handleClick}>
-          <div className='col-10 col-s-10 col-xs-10 col-xl-7 project-even'>
-            <div className='col-4 project-even__images'>
+          <div
+              className='col-10 col-s-10 offset-s-1 col-xs-10 col-xl-7 offset-xl-3 project-even'>
+            <div
+                className='col-4 col-s-4 col-l-7 col-xl-7 project-even__images'>
               <Image images={props.images}/>
             </div>
             <div
-                className='col-4 col-s-8 col-xs-8 col-l-5 project-even__title'>
+                className='col-4 col-s-8 col-l-5 col-xl-5 project-even__title'>
               <Title index={props.index + 1} name={props.name}
                      description={props.description}
                      technology={props.technology}/>
@@ -126,10 +129,10 @@ interface ITitle {
 function Title(props: ITitle) {
   return (
       <div className='item-name-section'>
-        <div className='font-2--2em'>{props.index}.</div>
+        <div className='font-2--7em'>{props.index}.</div>
         <div>
-          <p className='font-2--2em'>{props.name}</p>
-          <p className='font-0--9em'>{props.description}</p>
+          <p className='font-2--7em'>{props.name}</p>
+          <p className='font-1--1em'>{props.description}</p>
           <div>
             {props.technology.map(
                 (t: string) => <img src={imageDict[t]} alt={t}/>)}

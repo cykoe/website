@@ -48,7 +48,7 @@ export default class Detail extends React.Component<IProject, any> {
               width: '80%',
               height: '80%',
               overflowY: 'scroll',
-              background: '#F0ECE2'
+              background: '#F0ECE2',
             }}
             open={this.props.pop}
             onClose={this.closeModal}
@@ -60,37 +60,49 @@ export default class Detail extends React.Component<IProject, any> {
                   &times;
                 </span>
                 <div className="row">
-                  <div className="col-4">
+                  <div className="col-4 col-m-6 col-l-6 col-xl-6">
                     <div className="row">
                       <div className="col-4">
-                        <div className='font-1--6em'>{props.name}
+                        <div className='font-2--2em'>{props.name}
                         </div>
-                        <div className="font-0--8em">
+                        <div className="font-1--1em">
                           {props.about}</div>
                       </div>
                     </div>
                     <div className="row">
-                      <div className="col-4">
-                        <div className="font-1--6em">Platform</div>
-                        <div className="font-0--8em">{props.platform}</div>
+                      <div className="col-4 col-m-6 col-l-6 col-xl-6">
+                        <div className="font-2--2em">Platform</div>
+                        <div className="font-1--1em">{props.platform}</div>
                       </div>
-                      <div className="col-4">
-                        <div className="font-1--6em">Category</div>
-                        <div className="font-0--8em">{props.category.map(
+                      <div className="col-4 col-m-6 col-l-6 col-xl-6">
+                        <div className="font-2--2em">Category</div>
+                        <div className="font-1--1em">{props.category.map(
                             (c: string) => <span>{c} </span>)}</div>
                       </div>
                     </div>
                     <div className="row">
                       <div className="col-4">
-                        <div className="font-1--6em">Detail</div>
+                        <div className="font-2--2em">Detail</div>
                         <div
                             className="font-0--7em">
                           <ReactMarkdown source={this.state.detail}/>
                         </div>
                       </div>
                     </div>
+                    <div className="row project-source">
+                      <div className="col-4 font-1--8em">
+                        <a
+                            href={props.productUrl} target="_blank"
+                            rel="noopener noreferrer">see the product</a>
+                      </div>
+                      <div className="col-4 font-1--8em">
+                        <a
+                            href={props.codeUrl} target="_blank"
+                            rel="noopener noreferrer">source code</a>
+                      </div>
+                    </div>
                   </div>
-                  <div className="col-4 gallery">
+                  <div className="col-4 col-m-6 col-l-6 col-xl-6 gallery">
                     <ul>
                       {props.images.map(
                           (image: string, index: number) => <li key={index}><img
@@ -102,24 +114,12 @@ export default class Detail extends React.Component<IProject, any> {
                 </div>
                 <div className="row">
                   <div className="col-4">
-                    <div className="row project-source">
-                      <div className="col-4 font-1--0em">
-                        <a
-                            href={props.productUrl} target="_blank"
-                            rel="noopener noreferrer">see the product</a>
-                      </div>
-                      <div className="col-4 font-1--0em">
-                        <a
-                            href={props.codeUrl} target="_blank"
-                            rel="noopener noreferrer">see the source code</a>
-                      </div>
-                    </div>
                     <div className="row project-options">
-                      <div className="col-4 font-0--8em"
+                      <div className="col-4 col-m-6 col-l-6 col-xl-6 font-1--4em"
                            onClick={this.previous}>
                         <span>previous project</span><img
                           src={arrow_back} alt="back"/></div>
-                      <div className="col-4 font-0--8em" onClick={this.next}>
+                      <div className="col-4 col-m-6 col-l-6 col-xl-6 font-1--4em" onClick={this.next}>
                         <span>next project</span><img
                           src={arrow_forward} alt="forward"/></div>
                     </div>

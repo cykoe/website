@@ -56,7 +56,6 @@ ul {
 }
 
 @mixin vertical-align($position) {
-  height: 100%;
   display: flex;
   flex-direction: column;
   @if $position == top {
@@ -69,8 +68,6 @@ ul {
 }
 
 .introduction {
-  height: 100%;
-
   &__logos {
     @include vertical-align(bottom);
     display: none;
@@ -82,18 +79,27 @@ ul {
         padding: 10% 0;
       }
     }
-  }
 
-  &__logos--small {
-    @include vertical-align(bottom);
+    &--small {
+      @include vertical-align(bottom);
+
+      ul {
+        margin: 0;
+
+        li {
+          padding: 5% 0;
+        }
+      }
+    }
   }
 
   .introduction__titles {
     padding-right: 0;
+    height: 380px;
 
     p {
       position: relative;
-      width: 150%;
+      width: 160%;
       text-align: left;
       margin: 0;
       word-break: normal;
@@ -111,39 +117,96 @@ ul {
 
     @include vertical-align(top);
   }
+}
 
-  .introduction__scroll {
-    span {
-      position: relative;
-      top: 5%;
-
-      p {
-        writing-mode: vertical-rl;
-        text-orientation: mixed;
-      }
-    }
-
-    @include vertical-align(bottom)
+@mixin logo-animation($property, $value, $prefixes) {
+  @each $prefix in $prefixes {
+    -#{$prefix}-#{$property}: $value;
   }
+  #{$property}: $value;
 }
 
 .CLogo {
-  -webkit-transition: all 1.5s ease-in;
-  -moz-transition: all 1.5s ease-in;
-  -o-transition: all 1.5s ease-in;
-  -ms-transition: all 1.5s ease-in;
-  transition: all 1.5s ease-in;
+  @include logo-animation(transition, all 1.5s ease-out, webkit moz o ms);
+
+  &:hover {
+    @extend .CLogo;
+    @include logo-animation(transform, rotate(720deg), webkit moz o ms);
+  }
 }
 
-.CLogo:hover {
-  -webkit-transition: all 1.5s ease-out;
-  -moz-transition: all 1.5s ease-out;
-  -o-transition: all 1.5s ease-out;
-  -ms-transition: all 1.5s ease-out;
-  transition: all 1.5s ease-out;
-  -webkit-transform: rotate(720deg);
-  -moz-transform: rotate(720deg);
-  -o-transform: rotate(720deg);
-  -ms-transform: rotate(720deg);
-  transform: rotate(720deg);
+@each $size in (420px, 460px, 500px) {
+  @media only screen and(min-width: $size) {
+    .introduction {
+      .introduction__titles {
+        height: $size;
+      }
+
+      .introduction__logo img {
+        width: $size;
+      }
+    }
+  }
 }
+
+@media only screen and(min-width: 600px) {
+  .App .main-section {
+    padding: 2% 0 10% 0;
+  }
+
+  .introduction {
+    height: 100%;
+
+    .introduction__logos {
+      @include vertical-align(bottom);
+      height: 100%;
+
+      ul {
+        margin: 0;
+
+        li {
+          padding: 10% 0;
+        }
+      }
+
+      &--small {
+        @include vertical-align(bottom);
+        display: none;
+
+        ul {
+          margin: 0;
+
+          li {
+            padding: 5% 0;
+          }
+        }
+      }
+    }
+
+    .introduction__titles {
+      height: 100%;
+    }
+
+    .introduction__logo {
+      height: 100%;
+      justify-content: center;
+
+      img {
+        width: 380px;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 1000px) {
+  .introduction {
+
+    .introduction__titles p{
+      width: 100%;
+      text-align: center;
+    }
+
+  }
+}
+

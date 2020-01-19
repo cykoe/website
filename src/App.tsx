@@ -65,31 +65,30 @@ class App extends React.Component {
         <div className="App">
           <div className='main-section'>
             <div className='row'>
-              <div className="col-1 offset-m-1">
-                <img src={Logo} alt="logo" className='CLogo'/>
+              <div className="col-1 offset-s-1 offset-m-1 col-l-1 offset-l-2">
+
+                <a href="https://github.com/sircharlie"
+                   target='_blank'><img src={Logo} alt="logo"
+                                        className='CLogo'/></a>
               </div>
             </div>
             <div className='row introduction'>
               <div
-                  className='col-2 col-xl-1 col-l-3 col-s-1 col-xs-1 introduction__logos'>
+                  className='col-2 offset-s-1 col-m-2 col-l-1 offset-l-2 col-s-1 col-xs-1 introduction__logos'>
                 <Logos/>
               </div>
               <div
-                  className='col-2 col-xl-3 col-l-2 col-s-3 col-xs-6 text-center introduction__titles'>
-                <p className='font-2--0em'>Charlie Yang</p>
-                <p className='font-1--1em'>Software Engineer</p>
+                  className='col-2 col-m-3 col-l-3 text-center introduction__titles'>
+                <p className='font-2--8em'>Charlie Yang</p>
+                <p className='font-1--5em'>Software Engineer</p>
               </div>
               <div
-                  className='col-2 col-xl-3 col-s-6 col-xs-6 introduction__logo'>
+                  className='col-2 col-m-5 col-l-3 introduction__logo'>
                 <img src={MainLogo} alt=""/>
               </div>
               <div
                   className='col-3 col-xs-9 introduction__logos--small'>
                 <Logos/>
-              </div>
-              <div
-                  className='col-1 col-s-1 col-xs-2 text-center introduction__scroll'>
-                <span className='scroll-down-text'><p className='font-1--0em'>SCROLL DOWN</p></span>
               </div>
             </div>
           </div>
@@ -134,14 +133,18 @@ class App extends React.Component {
 
           <div className='footer-section text-center'>
             <ul className="col-12">
-              <li><img src={weibo_light} alt=""/></li>
-              <li><img src={twitter_light} alt=""/></li>
-              <li><img src={youtube_light} alt=""/></li>
-              <li><img src={email_light} alt=""/></li>
+              <li><a href="https://github.com/sircharlie"
+                     target='_blank'><img src={weibo_light} alt=""/></a></li>
+              <li><a href="https://github.com/sircharlie"
+                     target='_blank'><img src={twitter_light} alt=""/></a></li>
+              <li><a href="https://github.com/sircharlie"
+                     target='_blank'><img src={youtube_light} alt=""/></a></li>
+              <li><a href="mailto:esculin.hao@gmail.com?Subject=Hello%20there"
+                     target="_top"><img src={email_light} alt="email"/></a></li>
             </ul>
             <div>
-              <img src={copyright} alt=""/>
-
+              <a href="https://github.com/sircharlie" target='_blank'><img
+                  src={copyright} alt="sircharlie"/></a>
             </div>
           </div>
         </div>
@@ -152,10 +155,19 @@ class App extends React.Component {
 function Logos() {
   return (
       <ul>
-        <li><img src={weibo_dark} alt="weibo"/></li>
-        <li><img src={twitter_dark} alt="twitter"/></li>
-        <li><img src={youtube_dark} alt="youtube"/></li>
-        <li><img src={email_dark} alt="email"/></li>
+        <li><a href="https://github.com/sircharlie" target='_blank'><img
+            src={weibo_dark}
+            alt="weibo"/></a></li>
+        <li><a href="https://github.com/sircharlie" target='_blank'><img
+            src={twitter_dark}
+            alt="twitter"/></a>
+        </li>
+        <li><a href="https://github.com/sircharlie" target='_blank'><img
+            src={youtube_dark}
+            alt="youtube"/></a>
+        </li>
+        <li><a href="mailto:esculin.hao@gmail.com?Subject=Hello%20there"
+               target="_top"><img src={email_dark} alt="email"/></a></li>
       </ul>
   );
 }
