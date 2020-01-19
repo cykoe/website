@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.08d12da9.chunk.css",
-    "main.js": "/website/static/js/main.8bd835c8.chunk.js",
-    "main.js.map": "/website/static/js/main.8bd835c8.chunk.js.map",
+    "main.css": "/website/static/css/main.bf00c979.chunk.css",
+    "main.js": "/website/static/js/main.638fd788.chunk.js",
+    "main.js.map": "/website/static/js/main.638fd788.chunk.js.map",
     "runtime-main.js": "/website/static/js/runtime-main.14dbd8b4.js",
     "runtime-main.js.map": "/website/static/js/runtime-main.14dbd8b4.js.map",
     "static/js/2.66981e2e.chunk.js": "/website/static/js/2.66981e2e.chunk.js",
     "static/js/2.66981e2e.chunk.js.map": "/website/static/js/2.66981e2e.chunk.js.map",
     "index.html": "/website/index.html",
-    "precache-manifest.288d8433c8749c4ac2d4222950c673b0.js": "/website/precache-manifest.288d8433c8749c4ac2d4222950c673b0.js",
+    "precache-manifest.a0f2b69a7e23611d90e1ee112298ec1f.js": "/website/precache-manifest.a0f2b69a7e23611d90e1ee112298ec1f.js",
     "service-worker.js": "/website/service-worker.js",
-    "static/css/main.08d12da9.chunk.css.map": "/website/static/css/main.08d12da9.chunk.css.map",
+    "static/css/main.bf00c979.chunk.css.map": "/website/static/css/main.bf00c979.chunk.css.map",
     "static/media/alibaba.svg": "/website/static/media/alibaba.9890ab75.svg",
     "static/media/angular.svg": "/website/static/media/angular.5c69e565.svg",
     "static/media/arrow_back.svg": "/website/static/media/arrow_back.26b83d4e.svg",
@@ -39,7 +39,7 @@
   "entrypoints": [
     "static/js/runtime-main.14dbd8b4.js",
     "static/js/2.66981e2e.chunk.js",
-    "static/css/main.08d12da9.chunk.css",
-    "static/js/main.8bd835c8.chunk.js"
+    "static/css/main.bf00c979.chunk.css",
+    "static/js/main.638fd788.chunk.js"
   ]
 }
