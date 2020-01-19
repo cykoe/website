@@ -52,7 +52,7 @@ export default class Detail extends React.Component<IProject, any> {
             }}
             open={this.props.pop}
             onClose={this.closeModal}
-            lockScroll={true}
+            lockScroll
             closeOnDocumentClick>
           {close =>
               <div className="detail">
@@ -61,30 +61,28 @@ export default class Detail extends React.Component<IProject, any> {
                 </span>
                 <div className="row">
                   <div className="col-4 col-m-6 col-l-6 col-xl-6">
-                    <div className="row">
-                      <div className="col-4">
-                        <div className='font-2--2em'>{props.name}
-                        </div>
-                        <div className="font-1--1em">
-                          {props.about}</div>
+                    <div className="col-4">
+                      <div className='font-2--2em underline'>{props.name}
                       </div>
+                      <div className="font-1--1em">
+                        {props.about}</div>
                     </div>
                     <div className="row">
                       <div className="col-4 col-m-6 col-l-6 col-xl-6">
-                        <div className="font-2--2em">Platform</div>
+                        <div className="font-2--2em underline">Platform</div>
                         <div className="font-1--1em">{props.platform}</div>
                       </div>
                       <div className="col-4 col-m-6 col-l-6 col-xl-6">
-                        <div className="font-2--2em">Category</div>
+                        <div className="font-2--2em underline">Category</div>
                         <div className="font-1--1em">{props.category.map(
                             (c: string) => <span>{c} </span>)}</div>
                       </div>
                     </div>
                     <div className="row">
                       <div className="col-4">
-                        <div className="font-2--2em">Detail</div>
+                        <div className="font-2--2em underline">Detail</div>
                         <div
-                            className="font-0--7em">
+                            className="font-1--1em">
                           <ReactMarkdown source={this.state.detail}/>
                         </div>
                       </div>
@@ -115,11 +113,14 @@ export default class Detail extends React.Component<IProject, any> {
                 <div className="row">
                   <div className="col-4">
                     <div className="row project-options">
-                      <div className="col-4 col-m-6 col-l-6 col-xl-6 font-1--4em"
-                           onClick={this.previous}>
+                      <div
+                          className="col-4 col-m-6 col-l-6 col-xl-6 font-1--4em"
+                          onClick={this.previous}>
                         <span>previous project</span><img
                           src={arrow_back} alt="back"/></div>
-                      <div className="col-4 col-m-6 col-l-6 col-xl-6 font-1--4em" onClick={this.next}>
+                      <div
+                          className="col-4 col-m-6 col-l-6 col-xl-6 font-1--4em"
+                          onClick={this.next}>
                         <span>next project</span><img
                           src={arrow_forward} alt="forward"/></div>
                     </div>
