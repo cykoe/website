@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.24914b01.chunk.css",
-    "main.js": "/website/static/js/main.3e0b5a9c.chunk.js",
-    "main.js.map": "/website/static/js/main.3e0b5a9c.chunk.js.map",
+    "main.css": "/website/static/css/main.08d12da9.chunk.css",
+    "main.js": "/website/static/js/main.8bd835c8.chunk.js",
+    "main.js.map": "/website/static/js/main.8bd835c8.chunk.js.map",
     "runtime-main.js": "/website/static/js/runtime-main.14dbd8b4.js",
     "runtime-main.js.map": "/website/static/js/runtime-main.14dbd8b4.js.map",
-    "static/js/2.196ec678.chunk.js": "/website/static/js/2.196ec678.chunk.js",
-    "static/js/2.196ec678.chunk.js.map": "/website/static/js/2.196ec678.chunk.js.map",
+    "static/js/2.66981e2e.chunk.js": "/website/static/js/2.66981e2e.chunk.js",
+    "static/js/2.66981e2e.chunk.js.map": "/website/static/js/2.66981e2e.chunk.js.map",
     "index.html": "/website/index.html",
-    "precache-manifest.dcd255bf8de9b1d63f55be3a5c28a740.js": "/website/precache-manifest.dcd255bf8de9b1d63f55be3a5c28a740.js",
+    "precache-manifest.288d8433c8749c4ac2d4222950c673b0.js": "/website/precache-manifest.288d8433c8749c4ac2d4222950c673b0.js",
     "service-worker.js": "/website/service-worker.js",
-    "static/css/main.24914b01.chunk.css.map": "/website/static/css/main.24914b01.chunk.css.map",
+    "static/css/main.08d12da9.chunk.css.map": "/website/static/css/main.08d12da9.chunk.css.map",
     "static/media/alibaba.svg": "/website/static/media/alibaba.9890ab75.svg",
     "static/media/angular.svg": "/website/static/media/angular.5c69e565.svg",
     "static/media/arrow_back.svg": "/website/static/media/arrow_back.26b83d4e.svg",
@@ -29,7 +29,6 @@
     "static/media/tensorflow.svg": "/website/static/media/tensorflow.6f83f74d.svg",
     "static/media/twitter_dark.svg": "/website/static/media/twitter_dark.4108540e.svg",
     "static/media/twitter_light.svg": "/website/static/media/twitter_light.f9140151.svg",
-    "static/media/view.svg": "/website/static/media/view.5cd09b3e.svg",
     "static/media/vue.svg": "/website/static/media/vue.9a45fc76.svg",
     "static/media/weibo_dark.svg": "/website/static/media/weibo_dark.f6bce9f6.svg",
     "static/media/weibo_light.svg": "/website/static/media/weibo_light.eb9a2642.svg",
@@ -39,8 +38,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.14dbd8b4.js",
-    "static/js/2.196ec678.chunk.js",
-    "static/css/main.24914b01.chunk.css",
-    "static/js/main.3e0b5a9c.chunk.js"
+    "static/js/2.66981e2e.chunk.js",
+    "static/css/main.08d12da9.chunk.css",
+    "static/js/main.8bd835c8.chunk.js"
   ]
 }
