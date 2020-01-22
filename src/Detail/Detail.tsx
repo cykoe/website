@@ -6,6 +6,7 @@ import arrow_back from '../assets/arrow_back.svg';
 import arrow_forward from '../assets/arrow_forward.svg';
 import {IProject} from '../Project/Project';
 import Popup from 'reactjs-popup';
+import emoji from 'emoji-dictionary';
 
 const ReactMarkdown = require('react-markdown');
 const detailUrl = 'https://raw.githubusercontent.com/sircharlie/diary/master/';
@@ -41,6 +42,9 @@ export default class Detail extends React.Component<IProject, any> {
 
   render() {
     const props = this.props;
+    const emojiSupport = (text: any) => text.value.replace(/:\w+:/gi,
+        (name: any) => emoji.getUnicode(name));
+
     return (
         <Popup
             modal
@@ -83,7 +87,8 @@ export default class Detail extends React.Component<IProject, any> {
                         <div className="font-2--2em underline">Detail</div>
                         <div
                             className="font-1--1em">
-                          <ReactMarkdown source={this.state.detail}/>
+                          <ReactMarkdown source={this.state.detail}
+                                         renderers={{text: emojiSupport}}/>
                         </div>
                       </div>
                     </div>
