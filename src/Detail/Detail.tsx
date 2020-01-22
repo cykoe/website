@@ -1,10 +1,10 @@
 import React from 'react';
 import axios from 'axios';
 
-import './detail.scss';
-import arrow_back from './assets/arrow_back.svg';
-import arrow_forward from './assets/arrow_forward.svg';
-import {IProject} from './project';
+import './Detail.scss';
+import arrow_back from '../assets/arrow_back.svg';
+import arrow_forward from '../assets/arrow_forward.svg';
+import {IProject} from '../Project/Project';
 import Popup from 'reactjs-popup';
 
 const ReactMarkdown = require('react-markdown');

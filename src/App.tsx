@@ -1,22 +1,57 @@
 import React from 'react';
 
 import './Apps.scss';
-import Logo from './assets/logo.svg';
+import logo from './assets/logo.svg';
 import MainLogo from './assets/x.svg';
-import weibo_dark from './assets/weibo_dark.svg';
-import weibo_light from './assets/weibo_light.svg';
 import email_dark from './assets/email_dark.svg';
 import email_light from './assets/email_light.svg';
 import youtube_dark from './assets/youtube_dark.svg';
 import youtube_light from './assets/youtube_light.svg';
 import twitter_dark from './assets/twitter_dark.svg';
+import weibo_dark from './assets/weibo_dark.svg';
+import weibo_light from './assets/weibo_light.svg';
+import github_light from './assets/github_light.svg';
+import github_dark from './assets/github_dark.svg';
 import twitter_light from './assets/twitter_light.svg';
 import copyright from './assets/copyright.svg';
-import Project, {IProject} from './project';
+import Project, {IProject} from './Project/Project';
 import axios from 'axios';
-import Detail from './detail';
+import Detail from './Detail/Detail';
 
 const url = 'https://raw.githubusercontent.com/sircharlie/diary/master/projects.json';
+
+const logos: ILogoLink[] = [
+  {
+    name: 'github',
+    logo_dark: github_dark,
+    logo_light: github_light,
+    url: 'https://github.com/sircharlie',
+  },
+  {
+    name: 'twitter_dark',
+    logo_dark: twitter_dark,
+    logo_light: twitter_light,
+    url: 'mailto:officialcharlieyang@gmail.com?subject=Hi Charlie',
+  },
+  {
+    name: 'youtube_dark',
+    logo_dark: youtube_dark,
+    logo_light: youtube_light,
+    url: 'mailto:officialcharlieyang@gmail.com?subject=Hi Charlie',
+  },
+  {
+    name: 'weibo_dark',
+    logo_dark: weibo_dark,
+    logo_light: weibo_light,
+    url: 'mailto:officialcharlieyang@gmail.com?subject=Hi Charlie',
+  },
+  {
+    name: 'email_dark',
+    logo_dark: email_dark,
+    logo_light: email_light,
+    url: 'mailto:officialcharlieyang@gmail.com?subject=Hi Charlie',
+  }
+];
 
 class App extends React.Component {
   state: any = {
@@ -68,27 +103,28 @@ class App extends React.Component {
               <div className="col-1 offset-s-1 offset-m-1 col-l-1 offset-l-2">
 
                 <a href="https://github.com/sircharlie"
-                   target='_blank'><img src={Logo} alt="logo"
+                   rel="noopener noreferrer"
+                   target='_blank'><img src={logo} alt="logo"
                                         className='CLogo'/></a>
               </div>
             </div>
             <div className='row introduction'>
               <div
                   className='col-2 offset-s-1 col-m-2 col-l-1 offset-l-2 col-s-1 col-xs-1 introduction__logos'>
-                <Logos/>
+                <Logos dark={true}/>
               </div>
               <div
-                  className='col-2 col-m-3 col-l-3 text-center introduction__titles'>
+                  className='col-2 col-s-6 col-m-3 col-l-3 text-center introduction__titles'>
                 <p className='font-2--8em'>Charlie Yang</p>
                 <p className='font-1--5em'>Software Engineer</p>
               </div>
               <div
-                  className='col-2 col-m-5 col-l-3 introduction__logo'>
+                  className='col-2 col-s-4 col-m-5 col-l-3 introduction__logo'>
                 <img src={MainLogo} alt=""/>
               </div>
               <div
                   className='col-3 col-xs-9 introduction__logos--small'>
-                <Logos/>
+                <Logos dark={true}/>
               </div>
             </div>
           </div>
@@ -131,19 +167,11 @@ class App extends React.Component {
 
           </div>
 
-          <div className='footer-section text-center'>
-            <ul className="col-12">
-              <li><a href="https://github.com/sircharlie"
-                     target='_blank'><img src={weibo_light} alt=""/></a></li>
-              <li><a href="https://github.com/sircharlie"
-                     target='_blank'><img src={twitter_light} alt=""/></a></li>
-              <li><a href="https://github.com/sircharlie"
-                     target='_blank'><img src={youtube_light} alt=""/></a></li>
-              <li><a href="mailto:esculin.hao@gmail.com?Subject=Hello%20there"
-                     target="_top"><img src={email_light} alt="email"/></a></li>
-            </ul>
-            <div>
-              <a href="https://github.com/sircharlie" target='_blank'><img
+          <div className='footer-section row text-center'>
+            <div className='col-12'><Logos dark={false}/></div>
+            <div className='col-12'>
+              <a href="https://github.com/sircharlie" rel="noopener noreferrer"
+                 target='_blank'><img
                   src={copyright} alt="sircharlie"/></a>
             </div>
           </div>
@@ -152,22 +180,30 @@ class App extends React.Component {
   }
 }
 
-function Logos() {
+export interface ILogoLink {
+  name: string;
+  url: string;
+  logo_light?: string;
+  logo_dark?: string;
+  logo?: string;
+}
+
+function Logo(props: ILogoLink) {
+  return (
+      <li><a href={props.url} target='_blank' rel="noopener noreferrer"><img
+          src={props.logo} alt={props.name}/></a></li>
+  );
+}
+
+function Logos(props: { dark: boolean }) {
   return (
       <ul>
-        <li><a href="https://github.com/sircharlie" target='_blank'><img
-            src={weibo_dark}
-            alt="weibo"/></a></li>
-        <li><a href="https://github.com/sircharlie" target='_blank'><img
-            src={twitter_dark}
-            alt="twitter"/></a>
-        </li>
-        <li><a href="https://github.com/sircharlie" target='_blank'><img
-            src={youtube_dark}
-            alt="youtube"/></a>
-        </li>
-        <li><a href="mailto:esculin.hao@gmail.com?Subject=Hello%20there"
-               target="_top"><img src={email_dark} alt="email"/></a></li>
+        {logos.map((logo: ILogoLink, index: number) => <Logo key={index}
+                                                             name={logo.name}
+                                                             logo={props.dark ?
+                                                                 logo.logo_dark:
+                                                                 logo.logo_light}
+                                                             url={logo.url}/>)}
       </ul>
   );
 }

@@ -1,19 +1,18 @@
 import React from 'react';
 
-import './project.scss';
-import angular from './assets/angular.svg';
-import react from './assets/react.svg';
-import vue from './assets/vue.svg';
-import tensorflow from './assets/tensorflow.svg';
-import gcp from './assets/gcp.svg';
-import mysql from './assets/mysql.svg';
-import alibaba from './assets/alibaba.svg';
-import serverless from './assets/serverless.svg';
-import mongoDb from './assets/mongoDb.svg';
-import flutter from './assets/flutter.svg';
-import aws from './assets/aws.svg';
+import './Project.scss';
 
-const imageUrl = 'https://raw.githubusercontent.com/sircharlie/diary/master/';
+import angular from '../assets/angular.svg';
+import react from '../assets/react.svg';
+import vue from '../assets/vue.svg';
+import tensorflow from '../assets/tensorflow.svg';
+import gcp from '../assets/gcp.svg';
+import mysql from '../assets/mysql.svg';
+import alibaba from '../assets/alibaba.svg';
+import serverless from '../assets/serverless.svg';
+import mongoDb from '../assets/mongoDb.svg';
+import flutter from '../assets/flutter.svg';
+import aws from '../assets/aws.svg';
 
 const imageDict: any = {
   'angular': angular,
@@ -28,6 +27,9 @@ const imageDict: any = {
   'flutter': flutter,
   'aws': aws,
 };
+
+const imageUrl = 'https://raw.githubusercontent.com/sircharlie/diary/master/';
+
 
 export interface IProject {
   index: number;
@@ -66,13 +68,13 @@ export default class Project extends React.Component<IProject, any> {
           <div
               className='col-4 col-s-10 offset-s-1 col-xs-10 col-xl-7 offset-xl-2 project-odd'>
             <div
-                className='col-4 col-s-8 col-m-5 col-l-5 offset-m-1 offset-l-1 offset-xl-1 col-xl-5 project-odd__title'>
+                className='col-4 col-s-8 col-m-5 col-l-5 col-xl-5 project-odd__title'>
               <Title index={props.index + 1} name={props.name}
                      description={props.description}
                      technology={props.technology}/>
             </div>
             <div
-                className='col-4 col-s-4 col-m-6 col-l-6 col-l-6 project-odd__images'>
+                className='col-4 col-s-4 col-m-7 col-l-7 col-l-7 project-odd__images'>
               <Image images={props.images}/>
             </div>
           </div>
@@ -114,7 +116,6 @@ function Image(props: { images: string[] }) {
   return (
       <ul>
         <li><img src={imageUrl + props.images[0]} alt=""/></li>
-        <li><img src={imageUrl + props.images[1]} alt=""/></li>
       </ul>
   );
 }
@@ -132,7 +133,7 @@ function Title(props: ITitle) {
         <div className='font-2--7em'>{props.index}.</div>
         <div>
           <p className='font-2--7em'>{props.name}</p>
-          <p className='font-1--1em'>{props.description}</p>
+          <p className='font-1--0em'>{props.description}</p>
           <div>
             {props.technology.map(
                 (t: string) => <img src={imageDict[t]} alt={t}/>)}

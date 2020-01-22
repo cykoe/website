@@ -1,6 +1,6 @@
-@import "variables";
-@import "font";
-@import "col";
+@import "styles/variables";
+@import "styles/font";
+@import "styles/col";
 
 *,
 *:before,
@@ -24,8 +24,8 @@ ul {
 .App {
   color: $primary-color;
   background-color: $base-color;
-  font-family: 'Montserrat Alternates', sans-serif;
   overflow: hidden;
+  font-family: 'Montserrat Alternates', sans-serif;
 
   .main-section {
     padding: 3% 0;
@@ -46,6 +46,11 @@ ul {
     ul li {
       display: inline;
       padding: 0 20px;
+    }
+
+
+    [class*="col-"]:first-child {
+        padding-bottom: 0;
     }
   }
 
@@ -202,7 +207,7 @@ ul {
 @media only screen and(min-width: 1000px) {
   .introduction {
 
-    .introduction__titles p{
+    .introduction__titles p {
       width: 100%;
       text-align: center;
     }
