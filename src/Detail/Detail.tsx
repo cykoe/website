@@ -7,6 +7,7 @@ import arrow_forward from '../assets/arrow_forward.svg';
 import {IProject} from '../Project/Project';
 import Popup from 'reactjs-popup';
 import emoji from 'emoji-dictionary';
+import Carousel, {Modal, ModalGateway} from 'react-images';
 
 const ReactMarkdown = require('react-markdown');
 const detailUrl = 'https://raw.githubusercontent.com/sircharlie/diary/master/';
@@ -17,11 +18,20 @@ export default class Detail extends React.Component<IProject, any> {
     super(props);
     this.state = {
       detail: '',
+      modalIsOpen: false,
+      selectedIndex: 0,
     };
     this.closeModal = this.closeModal.bind(this);
     this.next = this.next.bind(this);
     this.previous = this.previous.bind(this);
   }
+
+  toggleModal = (index: number) => {
+    this.setState((state: any) => ({
+      modalIsOpen: !state.modalIsOpen,
+      selectedIndex: index,
+    }));
+  };
 
   closeModal() {
     this.props.closeModal();
@@ -41,10 +51,10 @@ export default class Detail extends React.Component<IProject, any> {
   }
 
   render() {
+    const {modalIsOpen, selectedIndex} = this.state;
     const props = this.props;
     const emojiSupport = (text: any) => text.value.replace(/:\w+:/gi,
         (name: any) => emoji.getUnicode(name));
-
     return (
         <Popup
             modal
@@ -60,6 +70,15 @@ export default class Detail extends React.Component<IProject, any> {
             closeOnDocumentClick>
           {close =>
               <div className="detail">
+                {}
+                <ModalGateway>
+                  {modalIsOpen ? (<Modal onClose={this.toggleModal}>
+                    <Carousel
+                        views={props.images.map(i => ({src: imageUrl + i}))}
+                        currentIndex={selectedIndex}
+                    />
+                  </Modal>):null}
+                </ModalGateway>
                 <span className="close" onClick={close}>
                   &times;
                 </span>
@@ -108,7 +127,9 @@ export default class Detail extends React.Component<IProject, any> {
                   <div className="col-4 col-m-6 col-l-6 col-xl-6 gallery">
                     <ul>
                       {props.images.map(
-                          (image: string, index: number) => <li key={index}><img
+                          (image: string, index: number) => <li key={index}
+                                                                onClick={() => this.toggleModal(
+                                                                    index)}><img
                               src={imageUrl + image} alt="image1"/>
                           </li>,
                       )}
