@@ -136,7 +136,7 @@ $tech_icon_size: 40px;
 
     &:hover {
       cursor: pointer;
-      height: 270px;
+      height: 240px;
       transition: height 0.5s ease-in;
       background-color: $primary-color;
 
@@ -158,9 +158,9 @@ $tech_icon_size: 40px;
         .item-name-section div:last-child div {
           display: block;
           padding-top: 5%;
-          animation-name: project-image--up;
-          animation-duration: 0.5s;
-          animation-fill-mode: forwards;
+          //animation-name: project-image--up;
+          //animation-duration: 0.5s;
+          //animation-fill-mode: forwards;
 
           img {
             animation: bounce 0.5s;
@@ -204,7 +204,7 @@ $tech_icon_size: 40px;
       background-color: $primary-color;
       cursor: pointer;
       transition: height 0.2s ease-in;
-      height: 250px;
+      height: 240px;
 
       .project-odd__images {
         display: flex;
@@ -228,9 +228,9 @@ $tech_icon_size: 40px;
         .item-name-section div:last-child div {
           display: block;
           padding-top: 5%;
-          animation-name: project-image--up;
-          animation-duration: 1.0s;
-          animation-fill-mode: forwards;
+          //animation-name: project-image--up;
+          //animation-duration: 1.0s;
+          //animation-fill-mode: forwards;
 
           img {
             animation: bounce 0.5s;

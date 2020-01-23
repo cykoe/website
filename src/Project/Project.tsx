@@ -136,7 +136,7 @@ function Title(props: ITitle) {
           <p className='font-1--0em'>{props.description}</p>
           <div>
             {props.technology.map(
-                (t: string) => <img src={imageDict[t]} alt={t}/>)}
+                (t: string, index: number) => <img key={index} src={imageDict[t]} alt={t}/>)}
           </div>
         </div>
       </div>
